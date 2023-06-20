@@ -6,5 +6,7 @@ math: true
 This is a place holder to when I get the time to organize this. For the moment, check my [GitHub](https://github.com/ibralyousef)
 
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="ibraheem-alyousef" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://sa.linkedin.com/in/ibraheem-alyousef?trk=profile-badge">Ibraheem F. Al-Yousef</a></div>
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="ibraheem-alyousef" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://sa.linkedin.com/in/ibraheem-alyousef?trk=profile-badge">Ibraheem F. Al-Yousef</a></div>
+              
               
