@@ -3,7 +3,7 @@ title: The President of the Physics Club
 date: 2024-08-08 00:00:00 +0300
 math: true
 image:
-  path: /Files/PhysicsClub/pclogo.png
+  path: /Files/PhysicsClub/logo.pdf
   alt: Physics Club Logo
 categories: [Physics, Physics Club]
 ---
@@ -24,7 +24,7 @@ Mr. Ammar was a very energetic student, he was one of the very first people to j
 
 We talked about writing a club tree to illustrate each executive and their tasks, these people have to enjoy their roles as they'll serve their responsibilities. Around that time, House of the Dragons was airing its first season, and club members were thinking about using it as a theme for the club tree. We obliged internally, but changed it before posting, here is what it used to be:
 
-![](/Files/PhysicsClub/hotd.jpg)
+![](/Files/PhysicsClub/hotd.jpg){: .shadow }
 _Club's Tree_
 
 "Who was the vice president?" you may ask, well, I wasn't particularly a people's person. I am good at reading them but very blunt to be bearable, and here comes the magic of the Hand, Mr. Mohammed AlAli. He was a very extroverted person, we met in English03 in the orientation year, without knowing that we will be major-mates. Almost all of the university knows him, and he knows them too! He was a perfect fit to compliment my weakness in these areas, he is always taking care of everything. All of the contributing members are, the club's success is entirely their feat. I was a mere captain steering the ship.
@@ -39,11 +39,11 @@ The day came, we prepared those 300 eclipse glasses, with one telescope connecte
 
 That event was very successful, the whole department visited us, and we had way more people coming than we thought, the female students was part of it too. Here are some photos:
 
- |                .                |                .                |
- | :-----------------------------: | :-----------------------------: |
- | ![](/Files/PhysicsClub/p3.jpeg) | ![](/Files/PhysicsClub/p4.jpeg) |
- | ![](/Files/PhysicsClub/p2.jpeg) | ![](/Files/PhysicsClub/p1.jpeg) |
- |                .                |                .                |
+ |                      .                      |                      .                      |
+ | :-----------------------------------------: | :-----------------------------------------: |
+ | ![](/Files/PhysicsClub/p3.jpeg){: .shadow } | ![](/Files/PhysicsClub/p4.jpeg){: .shadow } |
+ | ![](/Files/PhysicsClub/p2.jpeg){: .shadow } | ![](/Files/PhysicsClub/p1.jpeg){: .shadow } |
+ |                      .                      |                      .                      |
 
 
 The club then got a lot of attention, lots of people signed up and were contributing members by the end if that semester too.
@@ -56,7 +56,7 @@ People think being a leader of any sort is a flex. Well, yes, but actually no. T
 
 I was honored to lead that group of people, it was truly a remarkable personality-shaping experience. Their dedication and their devotedness were truly unmatched.
 
-![](/Files/PhysicsClub/pcp.png)
+![](/Files/PhysicsClub/pcp.png){: .shadow }
 _Heroes of the Physics Club_
 
 Finally, here is our report:
