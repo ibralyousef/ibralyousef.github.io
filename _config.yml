@@ -22,7 +22,7 @@ description: >- # used by seo meta and the atom feed
   Physics-related blog by 𝙸𝚋𝚛𝚊𝚑𝚎𝚎𝚖
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://ibralyousef.github.io"
+url: "https://iPhysics.sa"
 
 github:
   username: ibralyousef # change to your github username
@@ -90,7 +90,7 @@ theme_mode: dark
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: https://ibralyousef.github.io
+cdn: https://iPhysics.sa
 
 # the avatar on sidebar, support local or CORS resources
 avatar: https://avatars.githubusercontent.com/u/101507563?v=4
