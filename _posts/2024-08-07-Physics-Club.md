@@ -1,6 +1,6 @@
 ---
 title: The President of the Physics Club
-date: 2024-08-07 00:00:00 +0300
+date: 2024-08-08 00:00:00 +0300
 math: true
 image:
   path: /Files/PhysicsClub/pclogo.png
