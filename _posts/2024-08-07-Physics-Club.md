@@ -3,7 +3,7 @@ title: The President of the Physics Club
 date: 2024-08-07 00:00:00 +0300
 math: true
 image:
-  path: /Files/PhysicsClub/pcp.png
+  path: /Files/PhysicsClub/pclogo.png
   alt: Physics Club Heros
 categories: [Physics, Physics Club]
 ---
