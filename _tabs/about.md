@@ -6,4 +6,4 @@ order: 3
 
 Deeply fascinated by the laws of nature and their impact on the world. I found great satisfaction in physics' analytical problem-solving approach.
 
-Research interests: Mathematical physics; Quantum computing; Spin Hamiltonians. 
+Research interests: Quantum Computing; Mathematical physics; Spin Hamiltonians. 
