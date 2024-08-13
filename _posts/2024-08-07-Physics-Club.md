@@ -5,7 +5,7 @@ math: true
 image:
   path: /Files/PhysicsClub/pclogo.png
   alt: Physics Club Logo
-categories: [Physics, Physics Club]
+categories: [Personal, Physics Club]
 ---
 ### My journey in the physics club was quite a thrilling one, it's undoubtedly my biggest highlight during my study at KFUPM.
 
