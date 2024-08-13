@@ -57,10 +57,11 @@ If you feel like a mediocre physicist, fret not, it's never too late. Start by r
 Do not be bullied by my words, you are stronger than this! I hope you now know how important you are to society, and how far can you reach if you work on yourself properly. I wish you all the best, and I hope this yapping inspired you to be better. After all this is the end goal here.
 
 Here are your memes of the post:
- |             .             |             .              |
- | :-----------------------: | :------------------------: |
- | ![](/Files/Memes/ser.jpg) | ![](/Files/Memes/lagr.jpg) |
- |             .             |             .              |
+
+|             .             |             .              |
+| :-----------------------: | :------------------------: |
+| ![](/Files/Memes/ser.jpg) | ![](/Files/Memes/lagr.jpg) |
+|             .             |             .              |
 
 
 
