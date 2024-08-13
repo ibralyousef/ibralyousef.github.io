@@ -18,7 +18,7 @@ Let me start by saying, this is entirely and literally a skill issue. Excluding 
 
 You must set yourself apart from others, the bare minimum is not good enough. Find something that interests you and git gud at it, if not then learn how to code; it's unique enough.
 
-I aim to enlighten thee about thine possible sources of lacking. Thou art bound to remedy them by thine own way.
+I aim to enlighten thee about thy possible sources of lacking. Thou art bound to remedy them in thine own way.
 
 
 ### Physics is the most fundamental science of natural sciences, and should be handled in due fundamentality.
