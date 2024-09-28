@@ -12,7 +12,7 @@ categories: [Physics, Computational Physics]
 I have highlighted earlier that coding is an indispensable skill for physicists, this by no means a complete guide, but a bit of my thoughts.
 
 ## Mathematics vs. Python
-The answer is _both_. The ideal scenario is to be competent in both, because both of these platforms have strengths and weakness that combining them leaves you with the ultimate toolbox for Physics. For example, Mathematica lacks the community-wide package support due to its closed-source nature. Python is weak for symbolic computations, no matter what Sympy fans would try to convince you otherwise. The real question is:
+The answer is _both_. The ideal scenario is to be competent in both, because both of these platforms have strengths and weaknesses that combining them leaves you with the ultimate toolbox for Physics. For example, Mathematica lacks the community-wide package support due to its closed-source nature. Python is weak for symbolic computations, no matter what Sympy fans would try to convince you otherwise. The real question is:
 
 _if you have to pick one only, which one should you pick?_
 
