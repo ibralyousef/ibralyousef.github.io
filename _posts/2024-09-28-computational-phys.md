@@ -54,7 +54,7 @@ As for the Chemistry part, they were a part of a phenomenal course called "Compu
 
 ## Final remarks
 
-There aren't any. Coding is good and you should learn it.
+There aren't any.
 
 Here are your memes of the post:
 
