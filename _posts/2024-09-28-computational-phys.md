@@ -23,7 +23,7 @@ I am always bugged when people ask me: "What resources did u learn Python and Ma
 
 _Learn coding by attempting Physics problems_
 
-Wasting your time into theoretical background in coding really makes no sense to me. You learn by practice, like any other language. If you embrace this method of learning, then the medium (platform) for solving Physics problems should not matter at all. You can write your code in C, because you have honed your problem-solving skills to be easily translated into a pseudo-code, whatever the platform of that code turns to be.
+Wasting your time into theoretical backgrounds in coding really makes no sense to me. You learn by practice, like any other language. If you embrace this method of learning, then the medium (platform) for solving Physics problems should not matter at all. You can write your code in C, because you have honed your problem-solving skills to be easily translated into a pseudo-code, whatever the platform of that code turns to be.
 
 Here is an example of the thought process you should be having when solving a Physics problem like simulating the evolution of schrodinger's equation for some system:
 
