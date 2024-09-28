@@ -56,8 +56,8 @@ As for the Chemistry part, they were a part of a phenomenal course called "Compu
 
 There aren't any. Coding is good and you should learn it.
 
-
-![](/Files/Memes/SM.png){: w="300" h="300" .left}![](/Files/Memes/PS.png){: w="300" h="300" .right}
-
 Here are your memes of the post:
-$$ $$
+|                      .                      |                      .                      |
+| :-----------------------------------------: | :-----------------------------------------: |
+| ![](/Files/Memes/SM.jpg){: w="300" h="300"} | ![](/Files/Memes/PS.png){: w="300" h="300"} |
+|                      .                      |                      .                      |
