@@ -3,8 +3,8 @@ title: Computational Physics
 date: 2024-09-28 05:00:00 +0300
 math: true
 image:
-  path: /Files/Pics/mediocre.jpg
-  alt: Mediocres, Everywhere
+  path: /Files/Pics/MvsP.png
+  alt: Mathematica vs. Python
 categories: [Physics, Computational Physics]
 ---
 ## This is a guide into learning computational skills, and a guide into my Mathematica and Python codes.
@@ -32,14 +32,29 @@ Here is an example of the thought process you should be having when solving a Ph
 3. I need to solve schrodinger's equation for each time and space steps, and get the wavefunctions $\Psi(x,t)$ as a 2D list of my whole system of $x$ and $t$.
 4. Plot whatever I want, investigate different potentials, etc.
 
+For Mathematica, check this [term project notebook](/Files/Mathematica/PhysicsTrainingNotebook.nb) prepared by Dr. Khodja, an Assistant Professor of Physics @ ```KFUPM```
 
 ## My Undergrad Projects: Mathematica
 
-You can find all of my undergraduate Mathematica notebooks on [my github](https://github.com/ibralyousef/UnderGrad/tree/main/00_Mathematica), most of them are well documented but some are badly maintained. You can ask me about the specific of any one of them and I will gladly help. Here is a list 
+You can find all of my undergraduate Mathematica notebooks on [my github](https://github.com/ibralyousef/UnderGrad/tree/main/00_Mathematica), most of them are well documented but some are badly maintained. You can ask me about the specific of any one of them and I will gladly help. Here is a list of some interesting ones, labeled with the level of physics knowledge you need: 
 
+- [Intro] MathematicaHelpSession.nb: Start with this guy, a simple introduction into functions and plotting and some differential equations.
+- [Mid] SwingingAtwoodMachine.nb & Lagrange-and-Density-of-State.nb: For those who studied classical mechanics, and are familiar with Lagrangian mechanics.
+- [Mid] RelaxationMethod.nb: The relaxation method sor solving Laplace's equation for an electric potential.
+- [Mid] Merry-Go-Round.nb: This is also for classical mechanics, understanding different frames and the coriolis effect.
+- [Adv] QuantumOperatorsHS&More.nb: Intro to QM.
+- [Adv] CombDeltaPotential.nb: Check [here](/Files/Mathematica/CDP.pdf) for details.
+- [Adv] NumericalSchrodingerEquation.nb: Says what it does. 
+- [a Favorite of mine] TransferMatrixApproach.nb: Check [here](/Files/Mathematica/TMA.pdf) for details.
 
+## My Undergrad Projects: Python
+For Python I have done both Physics and Chemistry, found [here](https://github.com/ibralyousef/UnderGrad/tree/main/00_Python). The Physics ones have clear names and was mostly a part of a "Computational Physics" course, with an extra file, namely "Monte Carlo for Gamma Ray Transport.ipynb", which was a part of "Nuclear and Particles" course.
 
+As for the Chemistry part, there were a part of a phenomenal course called "Computational Chemistry" which was basically an introduction into quantum Physics simulations beyond the Hydrogen atom. Check it out if you are comfortable enough with quantum physics, the notebooks were prepared by the instructor, and should be easily readable.
 
+## Final remarks
+
+There isn't any. Coding is good and you should learn it.
 Here are your memes of the post:
 
 |             .             |             .              |
