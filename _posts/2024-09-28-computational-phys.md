@@ -11,7 +11,7 @@ categories: [Physics, Computational Physics]
 
 I have highlighted earlier that coding is an indispensable skill for physicists, this by no means a complete guide, but a bit of my thoughts.
 
-### Mathematics vs. Python
+## Mathematics vs. Python
 The answer is _both_. The ideal scenario is to be competent in both, because both of these platforms have strengths and weakness that combining them leaves you with the ultimate toolbox for Physics. For example, Mathematica lacks the community-wide package support due to its closed-source nature. Python is weak for symbolic computations, no matter what Sympy fans would try to convince you otherwise. The real question is:
 
 _if you have to pick one only, which one should you pick?_
@@ -50,7 +50,7 @@ You can find all of my undergraduate Mathematica notebooks on [my github](https:
 ## My Undergrad Projects: Python
 For Python, I have done both Physics and Chemistry, found [here](https://github.com/ibralyousef/UnderGrad/tree/main/00_Python). The Physics ones have clear names and was mostly a part of a "Computational Physics" course, with an extra file, namely "Monte Carlo for Gamma Ray Transport.ipynb", that was a part of "Nuclear and Particle Physics" course.
 
-As for the Chemistry part, they were a part of a phenomenal course called "Computational Chemistry" which was basically an introduction into quantum Physics simulations beyond the Hydrogen atom. Check the notebooks out if you are comfortable enough with quantum physics, the notebooks were prepared by the instructor, and should be easily readable.
+As for the Chemistry part, they were a part of a phenomenal course called "Computational Chemistry" which was basically an introduction into quantum Physics simulations beyond the Hydrogen atom. Check the notebooks if you are comfortable enough with quantum physics, the notebooks were prepared by a great instructor, and should be easily readable.
 
 ## Final remarks
 
