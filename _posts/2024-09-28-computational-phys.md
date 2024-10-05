@@ -1,5 +1,5 @@
 ---
-title: Ccomputational Physics
+title: Computational Physics
 date: 2024-09-28 05:00:00 +0300
 math: true
 image:
