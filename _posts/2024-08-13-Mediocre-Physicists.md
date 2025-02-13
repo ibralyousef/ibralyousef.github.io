@@ -3,7 +3,7 @@ title: Mediocre Physicists
 date: 2024-08-13 21:00:00 +0300
 math: true
 image:
-  path: /Files/Pics/mediocre.jpg
+  path: /files/Pics/mediocre.jpg
   alt: Mediocres, Everywhere
 categories: [Personal, Ranting]
 ---
@@ -60,7 +60,7 @@ Here are your memes of the post:
 
 |             .             |             .              |
 | :-----------------------: | :------------------------: |
-| ![](/Files/Memes/ser.jpg) | ![](/Files/Memes/lagr.jpg) |
+| ![](/files/Memes/ser.jpg) | ![](/files/Memes/lagr.jpg) |
 |             .             |             .              |
 
 

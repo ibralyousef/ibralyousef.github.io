@@ -3,7 +3,7 @@ title: Computational Physics
 date: 2024-09-28 05:00:00 +0300
 math: true
 image:
-  path: /Files/Pics/MvsP.png
+  path: /files/Pics/MvsP.png
   alt: Mathematica vs. Python
 categories: [Physics, Computational Physics]
 ---
@@ -32,7 +32,7 @@ Here is an example of the thought process you should be having when solving a Ph
 3. I need to solve schrodinger's equation for each time and space steps, and get the wavefunctions $\Psi(x,t)$ as a 2D list of my whole system of $x$ and $t$.
 4. Plot whatever I want, investigate different potentials, etc.
 
-For Mathematica, check this [term project notebook](/Files/Mathematica/PhysicsTrainingNotebook.nb) prepared by Dr. Khodja, an Assistant Professor of Physics @ ```KFUPM```
+For Mathematica, check this [term project notebook](/files/Mathematica/PhysicsTrainingNotebook.nb) prepared by Dr. Khodja, an Assistant Professor of Physics @ ```KFUPM```
 
 ## My Undergrad Projects: Mathematica
 
@@ -43,9 +43,9 @@ You can find all of my undergraduate Mathematica notebooks on [my github](https:
 - [Mid] RelaxationMethod.nb: The relaxation method sor solving Laplace's equation for an electric potential.
 - [Mid] Merry-Go-Round.nb: This is also for classical mechanics, understanding different frames and the coriolis effect.
 - [Adv] QuantumOperatorsHS&More.nb: Intro to QM.
-- [Adv] CombDeltaPotential.nb: Check [here](/Files/Mathematica/CDP.pdf) for details.
+- [Adv] CombDeltaPotential.nb: Check [here](/files/Mathematica/CDP.pdf) for details.
 - [Adv] NumericalSchrodingerEquation.nb: Says what it does. 
-- [a Favorite of mine] TransferMatrixApproach.nb: Check [here](/Files/Mathematica/TMA.pdf) for details.
+- [a Favorite of mine] TransferMatrixApproach.nb: Check [here](/files/Mathematica/TMA.pdf) for details.
 
 ## My Undergrad Projects: Python
 For Python, I have done both Physics and Chemistry, found [here](https://github.com/ibralyousef/UnderGrad/tree/main/00_Python). The Physics ones have clear names and was mostly a part of a "Computational Physics" course, with an extra file, namely "Monte Carlo for Gamma Ray Transport.ipynb", that was a part of "Nuclear and Particle Physics" course.
@@ -60,6 +60,6 @@ Here are your memes of the post:
 
 |                              .                              |                              .                              |
 | :---------------------------------------------------------: | :---------------------------------------------------------: |
-| <img src="/Files/Memes/PS.png" height = "300" width="300"/> | <img src="/Files/Memes/SM.jpg" height = "291" width="291"/> |
+| <img src="/files/Memes/PS.png" height = "300" width="300" alt="Meme"/> | <img src="/files/Memes/SM.jpg" height = "291" width="291" alt="Meme"/> |
 |                              .                              |                              .                              |
 

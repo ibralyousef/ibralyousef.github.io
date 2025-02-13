@@ -3,12 +3,12 @@ title: Thin Films
 date: 2023-09-26 00:00:00 +0300
 math: true
 image:
-  path: /Files/Pics/stf.png
+  path: /files/Pics/stf.png
   alt: Transmission plots for ITO doped with Titanium with different powers
 categories: [Physics, Thin Films]
 ---
 <div style="text-align: center;">
-  <a href="/Files/PDFs/UXploreFinalReport.pdf">Fabrication and Optical Analysis of Titanium-doped
+  <a href="/files/PDFs/UXploreFinalReport.pdf">Fabrication and Optical Analysis of Titanium-doped
 Indium-Tin-Oxide Thin-Films</a>
 </div>
 
