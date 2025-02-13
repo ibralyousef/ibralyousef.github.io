@@ -1,1 +1,0 @@
-## Usually, pdf files are done through WebMO platform for quantum chemistry computations. The rest are done through Jupyter Notebooks
