@@ -1,0 +1,245 @@
+---
+layout: page
+---
+
+{% include lang.html %}
+
+<!-- Course Header -->
+<div class="course-header mb-4">
+  <div class="mb-2">
+    <h1 class="course-title mb-0">{{ page.code }} - {{ page.title }}</h1>
+  </div>
+  
+  <div class="course-meta">
+    <div class="row">
+      <div class="col-md-8">
+        <p class="mb-2">{{ page.description }}</p>
+        <div class="course-info">
+          {% if page.credits %}
+            <span class="text-muted me-3"><strong>Credits:</strong> {{ page.credits }}</span>
+          {% endif %}
+          {% if page.level %}
+            <span class="text-muted me-3"><strong>Level:</strong> {{ page.level }}</span>
+          {% endif %}
+          {% if page.semester_offered %}
+            <span class="text-muted me-3"><strong>Offered:</strong> {{ page.semester_offered }}</span>
+          {% endif %}
+          {% if page.course_type %}
+            <span class="text-muted me-3"><strong>Type:</strong> {{ page.course_type }}</span>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-4 text-md-end">
+        {% if page.instructor %}
+          <div class="instructor-info">
+            <small class="text-muted">Instructor:</small><br>
+            <strong>{{ page.instructor }}</strong>
+          </div>
+        {% endif %}
+        {% if page.prerequisites %}
+          <div class="prerequisites-info mt-2">
+            <span class="text-muted"><strong>Prerequisites:</strong> {{ page.prerequisites }}</span>
+          </div>
+        {% endif %}
+        {% if page.corequisites %}
+          <div class="corequisites-info mt-2">
+            <span class="text-muted"><strong>Corequisites:</strong> {{ page.corequisites }}</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation Breadcrumbs -->
+<nav aria-label="breadcrumb" class="mb-4">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="{{ '/bs-physics/' | relative_url }}">
+        <i class="fas fa-graduation-cap"></i> BS in Physics
+      </a>
+    </li>
+    {% if page.level %}
+      <li class="breadcrumb-item">
+        <span class="text-capitalize">{{ page.level }}</span>
+      </li>
+    {% endif %}
+    <li class="breadcrumb-item active" aria-current="page">{{ page.code }}</li>
+  </ol>
+</nav>
+
+<!-- Course Content (Markdown) -->
+<div class="course-content">
+  {{ content }}
+</div>
+
+<!-- Resources Section -->
+{% assign course_slug = page.slug | default: page.title | slugify %}
+{% if site.data.resources[course_slug] %}
+  <div class="course-resources mt-5">
+    <hr>
+    <h2 class="mb-4">
+      Resources
+    </h2>
+    
+    {% assign resources = site.data.resources[course_slug] %}
+    
+    <div class="row">
+      {% for resource_type in resources %}
+        {% unless resource_type[0] == 'featured' %}
+          <div class="col-md-6 mb-4">
+            <div class="resource-category">
+              <h4 class="resource-type-title">
+                <i class="fas fa-{{ resource_type[1].icon | default: 'file' }} text-muted me-2"></i>
+                {{ resource_type[1].name }}
+              </h4>
+              
+              <div class="resource-list">
+                {% for item in resource_type[1].items %}
+                  <a href="{{ item.path | relative_url }}" 
+                     class="resource-item d-block p-2 mb-1 rounded" 
+                     {% if item.external %}target="_blank"{% endif %}>
+                    {{ item.name }}
+                    {% if item.size %}
+                      <small class="text-muted">({{ item.size }})</small>
+                    {% endif %}
+                  </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+<!-- Back to BS Physics Button -->
+<div class="mt-5 text-center">
+  <a href="{{ '/bs-physics/' | relative_url }}" class="btn btn-outline-secondary">
+    ← Back to BS in Physics
+  </a>
+</div>
+
+<style>
+.course-header {
+  padding: 2rem 0;
+}
+
+.course-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.course-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.course-info {
+  margin-top: 1rem;
+}
+
+.instructor-info, .prerequisites-info {
+  font-size: 0.9rem;
+}
+
+.course-content {
+  line-height: 1.6;
+}
+
+.resource-category {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.resource-type-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.resource-item {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.resource-item:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb {
+  padding: 0.5rem 0;
+  background: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+}
+
+/* Breadcrumb color fixes */
+.breadcrumb-item a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-color);
+}
+
+.breadcrumb-item span {
+  color: var(--text-muted-color);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--text-muted-color);
+}
+
+/* Theme-aware colors using CSS variables */
+.course-title {
+  color: var(--heading-color);
+}
+
+.course-subtitle {
+  color: var(--label-color);
+}
+
+.resource-category {
+  background-color: var(--card-bg);
+  border-color: var(--main-border-color);
+}
+
+.resource-type-title {
+  color: var(--heading-color);
+}
+
+.resource-item {
+  color: var(--link-color);
+}
+
+.resource-item:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .course-title {
+    font-size: 1.5rem;
+  }
+  
+  .course-subtitle {
+    font-size: 1rem;
+  }
+  
+  .course-header {
+    padding: 1rem 0;
+  }
+}
+</style>
