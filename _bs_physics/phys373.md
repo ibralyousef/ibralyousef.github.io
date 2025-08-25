@@ -17,7 +17,7 @@ Numerical methods and computer simulations in physics problems.
 **Prerequisites:** PHYS 300, Programming experience
 
 ## 📚 Course Resources
-
+<!-- 
 <details open>
 <summary><strong>📖 Textbooks & References</strong></summary>
 <ul>
@@ -81,4 +81,4 @@ Numerical methods and computer simulations in physics problems.
 <li><a href="/assets/resources/electives/phys373/Syllabus.pdf">Syllabus</a></li>
 <li><a href="/assets/resources/electives/phys373/course outlines.pdf">Course Outlines</a></li>
 </ul>
-</details>
+</details> -->
