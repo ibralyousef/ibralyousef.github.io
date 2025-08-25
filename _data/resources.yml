@@ -1,0 +1,373 @@
+freshman:
+  title: "Level 1 - Freshman"
+  courses:
+    - code: "PHYS 101"
+      name: "Fundamental Physics I"
+      resources:
+        textbooks:
+          name: "Textbooks & E-Books"
+          icon: "book"
+          items:
+            - name: "Fundamentals of Physics (10th Ed.)"
+              path: "/assets/resources/freshman/phys101/Fundementals of Physics _ 10th Ed..pdf"
+            - name: "Solution Manual (10th Ed.)"
+              path: "/assets/resources/freshman/phys101/Solution Manual for Fundamentals-of-Physics-10th Ed..pdf"
+        notes:
+          name: "Course Notes & Lab Reports"
+          icon: "file-alt"
+          items:
+            - name: "Complete Course Explanation (Arabic)"
+              path: "/assets/resources/freshman/phys101/شرح الكورس كامل - اونلاين.docx"
+            - name: "Important Links"
+              path: "/assets/resources/freshman/phys101/روابط مهمة.pdf"
+            - name: "Vectors Notes"
+              path: "/assets/resources/freshman/phys101/Vectors.docx"
+        exams:
+          name: "Past Exams"
+          icon: "clipboard-list"
+          items:
+            - name: "First Major Exams"
+              path: "/assets/resources/freshman/phys101/ First-Major old exams.docx"
+            - name: "Second Major Exams"
+              path: "/assets/resources/freshman/phys101/Second-Major old exams.docx"
+            - name: "Final Exams"
+              path: "/assets/resources/freshman/phys101/Final - old exams.docx"
+        labs:
+          name: "Lab Work"
+          icon: "flask"
+          items:
+            - name: "Maxwell Wheel Report"
+              path: "/assets/resources/freshman/phys101/report_MaxwellWheel (1).docx"
+            - name: "Rotational Inertia Report"
+              path: "/assets/resources/freshman/phys101/report_RotationalInertia.docx"
+
+    - code: "PHYS 102"
+      name: "Fundamental Physics II"
+      resources:
+        textbooks:
+          name: "Textbooks & E-Books"
+          icon: "book"
+          items:
+            - name: "Fundamentals of Physics (10th Ed.)"
+              path: "/assets/resources/freshman/phys102/Fundementals of Physics _ 10th Ed..pdf"
+            - name: "Solution Manual (10th Ed.)"
+              path: "/assets/resources/freshman/phys102/Soltuion Manual for Fundamentals-of-Physics-10th Ed..pdf"
+        notes:
+          name: "Course Notes & Solutions"
+          icon: "file-alt"
+          items:
+            - name: "Complete Course Explanation (Arabic)"
+              path: "/assets/resources/freshman/phys102/شرح الكورس كامل - اونلاين.docx"
+            - name: "Complete Physics 102 Summary (Arabic)"
+              path: "/assets/resources/freshman/phys102/ملخص فيزيا ١٠٢ ( كامله ) .pdf"
+            - name: "Chapter Solutions by Dr. Saeed Al Marzoug"
+              path: "/assets/resources/freshman/phys102/Ch18 solved by Dr. Saeed Al Marzoug.pdf"
+        formulas:
+          name: "Formula Sheets"
+          icon: "calculator"
+          items:
+            - name: "PHYS 102 Unified Formula Sheet"
+              path: "/assets/resources/freshman/phys102/Phys102-Unified-Formula-Sheet.pdf"
+        exams:
+          name: "Past Exams"
+          icon: "clipboard-list"
+          items:
+            - name: "First Major Exams"
+              path: "/assets/resources/freshman/phys102/First Major - old exams.docx"
+            - name: "Second Major Exams"
+              path: "/assets/resources/freshman/phys102/Second Major - old exams.docx"
+            - name: "Final Exams"
+              path: "/assets/resources/freshman/phys102/Final - old exams.docx"
+
+sophomore:
+  title: "Level 2 - Sophomore"
+  courses:
+    - code: "PHYS 204/205"
+      name: "Fundamental Physics III"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Fundamentals of Physics (10th Ed.)"
+              path: "/assets/resources/sophomore/phys204-205/Fundemental of Physics 10th Edition.pdf"
+            - name: "Solution Manual (10th Ed.)"
+              path: "/assets/resources/sophomore/phys204-205/Soltuion Manual 10th Edition - Physics.pdf"
+        notes:
+          name: "Lecture Notes"
+          icon: "file-alt"
+          items:
+            - name: "Wathiq Al-Baheer Complete Notes"
+              path: "/assets/resources/sophomore/phys204-205/theoretical-part/wathiq-notes/"
+        exams:
+          name: "Past Exams"
+          icon: "clipboard-list"
+          items:
+            - name: "Final Exam 2020"
+              path: "/assets/resources/sophomore/phys204-205/Final PHYS 204Exam_12272020.pdf"
+            - name: "Final Solved"
+              path: "/assets/resources/sophomore/phys204-205/Final solved.pdf"
+            - name: "Midterm 211"
+              path: "/assets/resources/sophomore/phys204-205/Phys204_midterm211.pdf"
+
+    - code: "PHYS 210"
+      name: "Methods of Theoretical Physics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Mathematical Methods in Physical Sciences"
+              path: "/assets/resources/sophomore/phys210/Mathematical_Methods_in_the_Physical_Sci.pdf"
+            - name: "Riley, Hobson & Bence"
+              path: "/assets/resources/sophomore/phys210/riley_hobson_bence.pdf"
+        notes:
+          name: "Summaries"
+          icon: "file-alt"
+          items:
+            - name: "Summary of Chapters 1, 2, 3"
+              path: "/assets/resources/sophomore/phys210/Summary of ch#1,2,3 .pdf"
+
+    - code: "PHYS 213"
+      name: "Modern Physics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Modern Physics - Serway, Moses, Moyer"
+              path: "/assets/resources/sophomore/phys213/Modern Physics - 3ed - Serway - Moses - Moyer[1].pdf"
+
+    - code: "PHYS 215"
+      name: "Physics & Islamic Heritage"
+      resources:
+        textbooks:
+          name: "References"
+          icon: "book"
+          items:
+            - name: "Arab & Muslim Contributions to Astronomy"
+              path: "/assets/resources/sophomore/phys215/اسهامات العرب و المسلمين في علم الفلك.pdf"
+        homework:
+          name: "Homework Solutions"
+          icon: "pencil-alt"
+          items:
+            - name: "Chapter 6 Q&A"
+              path: "/assets/resources/sophomore/phys215/PHYS215 - CH6 - Q&A.pdf"
+            - name: "Chapter 7 Key Solutions"
+              path: "/assets/resources/sophomore/phys215/Phys#215 - CH#7 - Key-Solution.pdf"
+
+junior:
+  title: "Level 3 - Junior"
+  courses:
+    - code: "PHYS 300"
+      name: "Classical Mechanics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Classical Dynamics - Marion & Thornton"
+              path: "/assets/resources/junior/phys300/Classical Dynamics of Particles & Systems - Marion & Thornton.pdf"
+            - name: "Classical Mechanics - John Taylor"
+              path: "/assets/resources/junior/phys300/Classical Mechanics John Taylor - PDF Room.pdf"
+        homework:
+          name: "Numerical Homework"
+          icon: "calculator"
+          items:
+            - name: "Mathematica Workshop"
+              path: "/assets/resources/junior/phys300/Dr.Saeed Workshop for Mathematica.mp4"
+            - name: "Numerical HW 1"
+              path: "/assets/resources/junior/phys300/PHYS-300-Numerical-HW-1.pdf"
+
+    - code: "PHYS 305"
+      name: "Electricity & Magnetism I"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Griffiths - Introduction to Electrodynamics"
+              path: "/assets/resources/junior/phys305/David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf"
+            - name: "Solution Manual"
+              path: "/assets/resources/junior/phys305/book sol.pdf"
+        notes:
+          name: "Lecture Notes"
+          icon: "file-alt"
+          items:
+            - name: "Chapter 6 Notes"
+              path: "/assets/resources/junior/phys305/PHYS305 Lec Notes CH6.pdf"
+            - name: "Chapter 5 Notes"
+              path: "/assets/resources/junior/phys305/PHYS305 Lec Notes Chap-5.pdf"
+
+    - code: "PHYS 306"
+      name: "Electricity & Magnetism II"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Griffiths - Introduction to Electrodynamics"
+              path: "/assets/resources/junior/phys306/David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf"
+            - name: "Solution Manual"
+              path: "/assets/resources/junior/phys306/book sol.pdf"
+
+    - code: "PHYS 308"
+      name: "Electronics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Electronic Principles (8th Ed.) - Malvino & Bates"
+              path: "/assets/resources/junior/phys308/Electronic Principles Eighth Edition Edited by Albert Malvino and David Bates.pdf"
+
+    - code: "PHYS 310"
+      name: "Quantum Mechanics & Applications I"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Zettili - Quantum Mechanics"
+              path: "/assets/resources/junior/phys310/E-BOOK  Zettili.pdf"
+            - name: "Griffiths - Introduction to Quantum Mechanics"
+              path: "/assets/resources/junior/phys310/Griffiths - Introduction to quantum mechanics.pdf"
+        summaries:
+          name: "Course Summaries"
+          icon: "file-alt"
+          items:
+            - name: "Quantum Mechanics Summary"
+              path: "/assets/resources/junior/phys310/Quantum Mechanics Summary.pptx"
+            - name: "Chapter 4 Summary"
+              path: "/assets/resources/junior/phys310/Summary of CH#4.pptx"
+
+senior:
+  title: "Level 4 - Senior"
+  courses:
+    - code: "PHYS 403"
+      name: "Senior Laboratory"
+      resources:
+        experiments:
+          name: "Lab Experiments"
+          icon: "flask"
+          items:
+            - name: "ESR Experiment Guide"
+              path: "/assets/resources/senior/phys403/ESR/Experiment guide ESR.pdf"
+            - name: "Laser Diodes Guide"
+              path: "/assets/resources/senior/phys403/LASER DIODES/TeachspinLaserDiode.pdf"
+            - name: "NMR Experiment"
+              path: "/assets/resources/senior/phys403/NMR/NMR (1-2).pdf"
+            - name: "XRD Analysis"
+              path: "/assets/resources/senior/phys403/XRD/XRD.pdf"
+
+    - code: "PHYS 410"
+      name: "Quantum Mechanics & Applications II"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Zettili - Quantum Mechanics"
+              path: "/assets/resources/senior/phys410/E-BOOK  Zettili.pdf"
+            - name: "Griffiths Solution Manual"
+              path: "/assets/resources/senior/phys410/Instructors' Solution Manual to Introduction to Quantum Mechanics (David Griffiths, Darrell Schroeter) (z-lib.org).pdf"
+        formulas:
+          name: "Formula Sheets"
+          icon: "calculator"
+          items:
+            - name: "PHYS 410 Formula Sheet"
+              path: "/assets/resources/senior/phys410/PHYS410FormulaSheet (1) (1).pdf"
+
+    - code: "PHYS 430"
+      name: "Thermal & Statistical Physics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Schroeder - Introduction to Thermal Physics"
+              path: "/assets/resources/senior/phys430/dokumen.tips_schroeder-daniel-v-an-introduction-to-thermal-physics-addison-wesleypdf.pdf"
+            - name: "Solutions Manual"
+              path: "/assets/resources/senior/phys430/dokumen.tips_solutions-schroeder-thermal-physics.pdf"
+
+electives:
+  title: "Elective Courses"
+  courses:
+    - code: "PHYS 336"
+      name: "Semiconductor Physics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Physics of Semiconductor Devices"
+              path: "/assets/resources/electives/phys336/Physics of Semiconductor Devices.pdf"
+            - name: "Semiconductor Physics and Devices - Neaman"
+              path: "/assets/resources/electives/phys336/Semiconductor Physics and Devices Neaman.pdf"
+
+    - code: "PHYS 373"
+      name: "Computational Physics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Computational Physics - Problem Solving with Python"
+              path: "/assets/resources/electives/phys373/Computational Physics Problem Solving with Python.pdf"
+            - name: "Python for Everyone (2nd Ed.)"
+              path: "/assets/resources/electives/phys373/Python for Everyone2ndEdition.pdf"
+            - name: "Numerical Analysis (9th Ed.)"
+              path: "/assets/resources/electives/phys373/numerical_analysis_9th.pdf"
+
+    - code: "PHYS 422"
+      name: "Nuclear Physics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Introductory Nuclear Physics - Krane"
+              path: "/assets/resources/electives/phys422/1.Introductory Nuclear Physics-Kenneth S. Krane.pdf"
+            - name: "Modern Physics (3rd Ed.) - Serway, Moses, Moyer"
+              path: "/assets/resources/electives/phys422/2. Modern Physics 3rd Edition (Serway, Moses, Moyer).pdf"
+
+    - code: "PHYS 432"
+      name: "Introduction to Solid State Physics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Kittel - Introduction to Solid State Physics"
+              path: "/assets/resources/electives/phys432/kittel.pdf"
+
+    - code: "PHYS 441"
+      name: "Particle Physics"
+      resources:
+        textbooks:
+          name: "Textbooks"
+          icon: "book"
+          items:
+            - name: "Griffiths - Introduction to Elementary Particles"
+              path: "/assets/resources/electives/phys441/Introduction to Elementary Particles, 2nd Edition by David Jeffery Griffiths (1).pdf"
+            - name: "Griffiths Solution Manual"
+              path: "/assets/resources/electives/phys441/Griffiths_Particle_Physics_Solutions_Manual.pdf"
+
+summer-training:
+  title: "Summer Training"
+  courses:
+    - code: "PHYS 399"
+      name: "Summer Training Program"
+      resources:
+        documents:
+          name: "Training Documents"
+          icon: "file-contract"
+          items:
+            - name: "Training Calendar"
+              path: "/assets/resources/summer-training/Calendar-Summer Training 213.pdf"
+            - name: "Contact Guide Form"
+              path: "/assets/resources/summer-training/Contact Guide form.docx"
+            - name: "Report Template"
+              path: "/assets/resources/summer-training/EE Summer Training Report Model (8).docx"
+            - name: "Evaluation Form"
+              path: "/assets/resources/summer-training/evaluation.summer.pdf"
