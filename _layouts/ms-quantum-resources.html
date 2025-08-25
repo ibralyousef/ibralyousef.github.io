@@ -7,37 +7,6 @@ layout: page
 
 {{ content }}
 
-<!-- Legend/Key Section -->
-<div class="legend-section mb-4">
-  <div class="legend-header">
-    <i class="fas fa-info-circle me-2"></i>
-    <strong>Graduate Course Information Guide</strong>
-  </div>
-  <div class="legend-content mt-3">
-      <div class="row">
-        <div class="col-md-6">
-          <h6><i class="fas fa-clock me-2"></i>Graduate Credit Hours Format</h6>
-          <p class="legend-item">
-            <code>3-0-3</code> = <span class="legend-desc">LT - LB - CR</span><br>
-            <small class="text-muted">
-              <strong>LT</strong> = Lecture/Theory hours per week<br>
-              <strong>LB</strong> = Lab hours per week<br>
-              <strong>CR</strong> = Credit hours (academic credit value)
-            </small><br>
-            <small class="text-muted">Example: 3 lecture hours, 0 lab hours, worth 3 credit hours</small>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <h6><i class="fas fa-tag me-2"></i>Course Types</h6>
-          <ul class="legend-list">
-            <li><span class="badge badge-type me-1">Core</span> Required course</li>
-            <li><span class="badge badge-type me-1">Project</span> Research project course</li>
-          </ul>
-        </div>
-      </div>
-  </div>
-</div>
-
 {% assign HEAD_PREFIX = 'h_' %}
 {% assign LIST_PREFIX = 'l_' %}
 
@@ -122,6 +91,37 @@ layout: page
         </div>
       {% endif %}
     {% endfor %}
+  </div>
+</div>
+
+<!-- Legend/Key Section -->
+<div class="legend-section mb-4">
+  <div class="legend-header">
+    <i class="fas fa-info-circle me-2"></i>
+    <strong>Graduate Course Information Guide</strong>
+  </div>
+  <div class="legend-content mt-3">
+      <div class="row">
+        <div class="col-md-6">
+          <h6><i class="fas fa-clock me-2"></i>Graduate Credit Hours Format</h6>
+          <p class="legend-item">
+            <code>3-0-3</code> = <span class="legend-desc">LT - LB - CR</span><br>
+            <small class="text-muted">
+              <strong>LT</strong> = Lecture/Theory hours per week<br>
+              <strong>LB</strong> = Lab hours per week<br>
+              <strong>CR</strong> = Credit hours (academic credit value)
+            </small><br>
+            <small class="text-muted">Example: 3 lecture hours, 0 lab hours, worth 3 credit hours</small>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h6><i class="fas fa-tag me-2"></i>Course Types</h6>
+          <ul class="legend-list">
+            <li><span class="badge badge-type me-1">Core</span> Required course</li>
+            <li><span class="badge badge-type me-1">Project</span> Research project course</li>
+          </ul>
+        </div>
+      </div>
   </div>
 </div>
 
