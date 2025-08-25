@@ -9,7 +9,6 @@ description: Introduction to semiconductor physics and electronic devices includ
 prerequisites: PHYS 201, PHYS 310
 semester_offered: F
 course_type: Elective
-resources_count: 15
 ---
 
 Introduction to semiconductor physics and electronic devices including p-n junctions, transistors, and integrated circuits.

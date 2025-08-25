@@ -9,7 +9,6 @@ description: Elementary particle physics including the Standard Model, particle 
 prerequisites: PHYS 310, PHYS 422
 semester_offered: S
 course_type: Elective
-resources_count: 10
 ---
 
 Elementary particle physics including the Standard Model, particle interactions, and experimental techniques.

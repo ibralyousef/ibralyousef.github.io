@@ -19,12 +19,6 @@ layout: page
   {% assign level_number = level_group.name %}
   {% assign courses_in_level = level_group.items | sort: 'code' %}
   {% assign courses_count = courses_in_level | size %}
-  {% assign total_resources = 0 %}
-  
-  <!-- Calculate total resources for this level -->
-  {% for course in courses_in_level %}
-    {% assign total_resources = total_resources | plus: course.resources_count %}
-  {% endfor %}
   
   <!-- Determine level title -->
   {% if level_number == "100" %}
@@ -50,7 +44,7 @@ layout: page
 
         <span class="mx-2 level-title">{{ level_title }}</span>
 
-        <!-- Resource count -->
+        <!-- Course count -->
         <span class="text-muted small font-weight-light">
           {% if courses_count > 0 %}
             {{ courses_count }}
@@ -59,14 +53,6 @@ layout: page
             {% else %}
               course
             {% endif %}
-            , 
-          {% endif %}
-
-          {{ total_resources }}
-          {% if total_resources > 1 %}
-            resources
-          {% else %}
-            resource
           {% endif %}
         </span>
       </span>
@@ -144,16 +130,6 @@ layout: page
                   {% endif %}
                 </div>
                 
-                <div class="course-resources text-end">
-                  <span class="text-muted small font-weight-light">
-                    {{ course.resources_count }}
-                    {% if course.resources_count > 1 %}
-                      resources
-                    {% else %}
-                      resource
-                    {% endif %}
-                  </span>
-                </div>
               </div>
             </li>
           {% endfor %}
@@ -245,11 +221,6 @@ layout: page
   line-height: 1.4;
 }
 
-.course-resources {
-  flex-shrink: 0;
-  margin-left: 1rem;
-  min-width: fit-content;
-}
 
 /* Base badge styles */
 .badge {
@@ -349,9 +320,6 @@ layout: page
     margin-bottom: 0.25rem;
   }
   
-  .course-resources {
-    margin-left: 0.5rem;
-  }
   
   .legend-content .row {
     margin: 0;

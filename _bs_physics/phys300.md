@@ -1,20 +1,19 @@
 ---
 layout: course
 code: PHYS 300
-title: Classical Mechanics
+title: Classical Mechanics I
 slug: phys300
-credits: 3-0-3
+credits: 4-0-4
 level: 300
-description: Newton's laws and their application; oscillatory motion; central force motion; rigid body motion; Lagrangian and Hamiltonian formulations.
-prerequisites: PHYS 102, MATH 201
+description: Newton's laws of motion and conservation theorems, Forced damped Oscillations; Coupled Oscillations; Lagrangian Dynamics, Hamilton's equations of motion; Central-force motion; Dynamics of systems of particles, Motion in a non-inertial reference frame, Dynamics of Rigid bodies including properties of Inertia tensor.
+prerequisites: PHYS 101 And (MATH 202 Or MATH 208)
 semester_offered: F
 course_type: Core
-resources_count: 15
 ---
 
-Newton's laws and their application; oscillatory motion; central force motion; rigid body motion; Lagrangian and Hamiltonian formulations.
+Newton's laws of motion and conservation theorems, Forced damped Oscillations; Coupled Oscillations; Lagrangian Dynamics, Hamilton's equations of motion; Central-force motion; Dynamics of systems of particles, Motion in a non-inertial reference frame, Dynamics of Rigid bodies including properties of Inertia tensor.
 
-**Prerequisites:** PHYS 102, MATH 201
+**Prerequisites:** PHYS 101 And (MATH 202 Or MATH 208)
 
 ## <i class="fas fa-book"></i> Course Resources
 

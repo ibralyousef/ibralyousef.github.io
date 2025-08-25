@@ -9,7 +9,6 @@ description: Introduction to computational methods in chemistry including quantu
 prerequisites: CHEM 201, PHYS 102
 semester_offered: F
 course_type: Elective
-resources_count: 28
 ---
 
 Introduction to computational methods in chemistry including quantum mechanics, molecular modeling, and computational tools.

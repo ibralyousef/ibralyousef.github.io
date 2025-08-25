@@ -10,5 +10,4 @@ description: Review of related Quantum Mechanics concepts including superpositio
 prerequisites: Graduate Standing
 semester_offered: S
 course_type: Core
-resources_count: 0
 ---

@@ -1,20 +1,19 @@
 ---
 layout: course
 code: PHYS 310
-title: Quantum Mechanics & Applications I
+title: Quantum Mechanics and Applications I
 slug: phys310
 credits: 3-0-3
 level: 300
-description: Wave mechanics, Schrödinger equation, hydrogen atom, and angular momentum.
-prerequisites: PHYS 201, MATH 301
+description: Fundamentals of non-relativistic quantum mechanics. Mathematical tools and basic postulates of Quantum Mechanics. The Schrödinger equation and its applications to various one-and three dimensional systems. Spin and identical particle effects. Addition of angular momenta.
+prerequisites: (PHYS 213 Or PHYS 204) And (MATH 202 Or MATH 208)
 semester_offered: S
 course_type: Core
-resources_count: 16
 ---
 
-Wave mechanics, Schrödinger equation, hydrogen atom, and angular momentum.
+Fundamentals of non-relativistic quantum mechanics. Mathematical tools and basic postulates of Quantum Mechanics. The Schrödinger equation and its applications to various one-and three dimensional systems. Spin and identical particle effects. Addition of angular momenta.
 
-**Prerequisites:** PHYS 201, MATH 301
+**Prerequisites:** (PHYS 213 Or PHYS 204) And (MATH 202 Or MATH 208)
 
 ## <i class="fas fa-book"></i> Course Resources
 

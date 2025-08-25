@@ -9,7 +9,6 @@ description: Magnetostatics, magnetic fields, Faraday's law, electromagnetic ind
 prerequisites: PHYS 305
 semester_offered: S
 course_type: Core
-resources_count: 15
 ---
 
 Magnetostatics, magnetic fields, Faraday's law, electromagnetic induction, Maxwell's equations, and electromagnetic waves.

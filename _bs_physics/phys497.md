@@ -7,9 +7,8 @@ credits: 0-0-3
 level: 400
 description: Independent research project under faculty supervision on topics in theoretical or experimental physics.
 prerequisites: Senior standing, permission of instructor
-semester_offered: F,S
+semester_offered: F/S
 course_type: Elective
-resources_count: 5
 ---
 
 Independent research project under faculty supervision on topics in theoretical or experimental physics.

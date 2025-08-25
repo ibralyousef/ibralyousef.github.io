@@ -1,20 +1,19 @@
 ---
 layout: course
 code: PHYS 305
-title: Electricity & Magnetism I
+title: Electricity and Magnetism I
 slug: phys305
 credits: 3-0-3
 level: 300
 description: Electrostatics, electric fields, Gauss's law, electric potential, capacitors, dielectrics, and electric currents.
-prerequisites: PHYS 102, MATH 202
+prerequisites: PHYS 102 And MATH 201 And (MATH 208 Or MATH 202)
 semester_offered: F
 course_type: Core
-resources_count: 20
 ---
 
 Electrostatics, electric fields, Gauss's law, electric potential, capacitors, dielectrics, and electric currents.
 
-**Prerequisites:** PHYS 102, MATH 202
+**Prerequisites:** PHYS 102 And MATH 201 And (MATH 208 Or MATH 202)
 
 ## <i class="fas fa-book"></i> Course Resources
 
