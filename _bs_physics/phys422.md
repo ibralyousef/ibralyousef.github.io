@@ -16,10 +16,10 @@ Introduction to nuclear and particle physics including nuclear structure, radioa
 
 **Prerequisites:** PHYS 310, MATH 301
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys422/textbooks/1.Introductory Nuclear Physics-Kenneth S. Krane.pdf">Introductory Nuclear Physics - Krane</a></li>
 <li><a href="/assets/resources/electives/phys422/textbooks/2. Modern Physics 3rd Edition (Serway, Moses, Moyer).pdf">Modern Physics - Serway, Moses, Moyer</a></li>
@@ -31,7 +31,7 @@ Introduction to nuclear and particle physics including nuclear structure, radioa
 </details>
 
 <details>
-<summary><strong>📝 Homework Solutions</strong></summary>
+<summary><strong><i class="fas fa-file-alt"></i> Homework Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys422/homework/PHYS 422-222 HW-1 Solutions.pdf">HW 1 - Solutions</a></li>
 <li><a href="/assets/resources/electives/phys422/homework/PHYS 422-222 HW-2 Solutions.docx">HW 2 - Solutions</a></li>
@@ -46,7 +46,7 @@ Introduction to nuclear and particle physics including nuclear structure, radioa
 </details>
 
 <details>
-<summary><strong>📊 Exams & Solutions</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys422/exams/PHYS 422-222 Major-1 Exam Solutions.docx">Major Exam 1 - Solutions</a></li>
 <li><a href="/assets/resources/electives/phys422/exams/PHYS 422-222 Major-2 Exam Solutions.docx">Major Exam 2 - Solutions</a></li>
@@ -54,7 +54,7 @@ Introduction to nuclear and particle physics including nuclear structure, radioa
 </details>
 
 <details>
-<summary><strong>📋 Original Homework Files</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Original Homework Files</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys422/422HW1.nb">Homework 1 (Mathematica)</a></li>
 <li><a href="/assets/resources/electives/phys422/422HW1.pdf">Homework 1 (PDF)</a></li>
@@ -69,9 +69,9 @@ Introduction to nuclear and particle physics including nuclear structure, radioa
 </details>
 
 <details>
-<summary><strong>📊 Projects & Simulations</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Projects & Simulations</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys422/Monte Carlo Simulation of Radiation Transport (Gamma Rays).pdf">Monte Carlo Simulation Report</a></li>
-<li><a href="/assets/resources/electives/phys422/Monte Carlo for Gamma Ray Transport.ipynb">Monte Carlo Simulation Code</a></li>
+<li><a href="/assets/resources/electives/phys422/Monte Carlo for Gamma Ray Transport.ipynb" download>Monte Carlo Simulation Code</a></li>
 </ul>
 </details>

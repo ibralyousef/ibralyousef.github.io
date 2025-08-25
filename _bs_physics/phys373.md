@@ -16,10 +16,10 @@ Numerical methods and computer simulations in physics problems.
 
 **Prerequisites:** PHYS 300, Programming experience
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys373/textbooks/Computational Physics Problem Solving with Python.pdf">Computational Physics Problem Solving with Python</a></li>
 <li><a href="/assets/resources/electives/phys373/textbooks/Python for Everyone2ndEdition.pdf">Python for Everyone (2nd Edition)</a></li>
@@ -31,33 +31,33 @@ Numerical methods and computer simulations in physics problems.
 </details>
 
 <details>
-<summary><strong>🧪 Lab Materials</strong></summary>
+<summary><strong><i class="fas fa-flask"></i> Lab Materials</strong></summary>
 <ul>
-<li><a href="/assets/resources/electives/phys373/Lab01.ipynb">Lab 01</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab02.ipynb">Lab 02</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab03.ipynb">Lab 03</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab04.ipynb">Lab 04</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab05.ipynb">Lab 05</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab06.ipynb">Lab 06</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab07.ipynb">Lab 07</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab08.ipynb">Lab 08</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab09.ipynb">Lab 09</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab10.ipynb">Lab 10</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab11.ipynb">Lab 11</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab12.ipynb">Lab 12</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab01.ipynb" download>Lab 01</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab02.ipynb" download>Lab 02</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab03.ipynb" download>Lab 03</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab04.ipynb" download>Lab 04</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab05.ipynb" download>Lab 05</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab06.ipynb" download>Lab 06</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab07.ipynb" download>Lab 07</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab08.ipynb" download>Lab 08</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab09.ipynb" download>Lab 09</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab10.ipynb" download>Lab 10</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab11.ipynb" download>Lab 11</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab12.ipynb" download>Lab 12</a></li>
 </ul>
 </details>
 
 <details>
-<summary><strong>📊 Quizzes & Exams</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Quizzes & Exams</strong></summary>
 <ul>
-<li><a href="/assets/resources/electives/phys373/Quiz04.ipynb">Quiz 04</a></li>
+<li><a href="/assets/resources/electives/phys373/Quiz04.ipynb" download>Quiz 04</a></li>
 <li><a href="/assets/resources/electives/phys373/373FormulaSheet.pdf">Formula Sheet</a></li>
 </ul>
 </details>
 
 <details>
-<summary><strong>📋 Projects</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Projects</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys373/Monte Carlo Simulation of Radiation Transport (Gamma Rays).pdf">Monte Carlo Simulation Project</a></li>
 <li><a href="/assets/resources/electives/phys373/Project Presentation.pdf">Project Presentation</a></li>
@@ -65,7 +65,7 @@ Numerical methods and computer simulations in physics problems.
 </details>
 
 <details>
-<summary><strong>📖 Lab Assignments</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Lab Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys373/labs/Introduction to python - Intro Computational Physics.pdf">Introduction to Python</a></li>
 <li><a href="/assets/resources/electives/phys373/labs/Labs-1.pdf">Lab Assignment 1</a></li>
@@ -83,7 +83,7 @@ Numerical methods and computer simulations in physics problems.
 </details>
 
 <details>
-<summary><strong>✅ Additional Quizzes</strong></summary>
+<summary><strong><i class="fas fa-check-circle"></i> Additional Quizzes</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys373/quizzes/PHYS-373-Quiz1-T222.pdf">Quiz 1</a></li>
 <li><a href="/assets/resources/electives/phys373/quizzes/PHYS-373-Quiz-02-T222.pdf">Quiz 2</a></li>

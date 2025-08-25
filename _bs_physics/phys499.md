@@ -16,12 +16,12 @@ Student presentations on current topics in physics and physics research.
 
 **Prerequisites:** Senior standing
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📊 Seminar Materials</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Seminar Materials</strong></summary>
 <ul>
-<li><a href="/assets/resources/electives/phys499/Monte Carlo for Gamma Ray Transport.ipynb">Monte Carlo Simulation Code</a></li>
+<li><a href="/assets/resources/electives/phys499/Monte Carlo for Gamma Ray Transport.ipynb" download>Monte Carlo Simulation Code</a></li>
 <li><a href="/assets/resources/electives/phys499/Monte Carlo for Gamma Ray Transport.pdf">Monte Carlo Simulation Report</a></li>
 </ul>
 </details>
