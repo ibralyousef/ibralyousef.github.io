@@ -166,9 +166,12 @@ collections:
   tabs:
     output: true
     sort_by: order
-  courses:
+  bs_physics:
     output: true
-    permalink: /resources/:name/
+    permalink: /bs-physics/:name/
+  ms_quantum:
+    output: true
+    permalink: /ms-quantum/:name/
 
 defaults:
   - scope:

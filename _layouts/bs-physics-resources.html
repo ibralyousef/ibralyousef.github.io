@@ -5,13 +5,62 @@ layout: page
 
 {% include lang.html %}
 
+{{ content }}
+
+<!-- Legend/Key Section -->
+<div class="legend-section mb-4">
+  <div class="legend-header">
+    <i class="fas fa-info-circle me-2"></i>
+    <strong>Course Information Guide</strong>
+  </div>
+  <div class="legend-content mt-3">
+      <div class="row">
+        <div class="col-md-6">
+          <h6><i class="fas fa-clock me-2"></i>Credit Hours Format</h6>
+          <p class="legend-item">
+            <code>3-3-4</code> = <span class="legend-desc">LT - LB - CR</span><br>
+            <small class="text-muted">
+              <strong>LT</strong> = Lecture/Theory hours per week<br>
+              <strong>LB</strong> = Lab hours per week<br>
+              <strong>CR</strong> = Credit hours (academic credit value)
+            </small><br>
+            <small class="text-muted">Example: 3 lecture hours, 3 lab hours, worth 4 credit hours</small>
+          </p>
+          
+          <h6><i class="fas fa-calendar-alt me-2"></i>Semester Offered</h6>
+          <ul class="legend-list">
+            <li><code>F</code> = Fall semester</li>
+            <li><code>S</code> = Spring semester</li>
+            <li><code>F/S</code> = Both Fall and Spring</li>
+            <li><code>Su</code> = Summer session</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h6><i class="fas fa-tag me-2"></i>Course Types</h6>
+          <ul class="legend-list">
+            <li><span class="badge badge-type me-1">Core</span> Required course</li>
+            <li><span class="badge badge-type me-1">Elective</span> Optional course</li>
+          </ul>
+          
+          <h6><i class="fas fa-layer-group me-2"></i>Course Levels</h6>
+          <ul class="legend-list">
+            <li><strong>100-Level:</strong> Freshman/First year</li>
+            <li><strong>200-Level:</strong> Sophomore/Second year</li>
+            <li><strong>300-Level:</strong> Junior/Third year</li>
+            <li><strong>400-Level:</strong> Senior/Fourth year</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
+
 {% assign HEAD_PREFIX = 'h_' %}
 {% assign LIST_PREFIX = 'l_' %}
 
 {% assign group_index = 0 %}
 
 <!-- Group courses by level -->
-{% assign courses_by_level = site.courses | group_by: 'level' | sort: 'name' %}
+{% assign courses_by_level = site.bs_physics | group_by: 'level' | sort: 'name' %}
 
 {% for level_group in courses_by_level %}
   {% assign level_number = level_group.name %}
@@ -90,7 +139,7 @@ layout: page
 
     <!-- Courses List (like sub-categories) -->
     {% if courses_count > 0 %}
-      <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
+      <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse" aria-expanded="false">
         <ul class="list-group">
           {% for course in courses_in_level %}
             <li class="list-group-item">
@@ -98,7 +147,7 @@ layout: page
                 <div class="course-main-info flex-grow-1">
                   <div class="course-header-line">
                     <i class="fas fa-graduation-cap fa-fw"></i>
-                    {% capture course_url %}/resources/{{ course.slug }}/{% endcapture %}
+                    {% capture course_url %}/bs-physics/{{ course.slug }}/{% endcapture %}
                     <a href="{{ course_url | relative_url }}" class="mx-2 course-link">
                       <code>{{ course.code }}</code> - {{ course.title }}
                     </a>
@@ -221,6 +270,64 @@ layout: page
   border: 1px solid var(--main-border-color);
 }
 
+/* Legend styling */
+.legend-section {
+  border: 1px solid var(--main-border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  margin-bottom: 1.5rem;
+}
+
+.legend-header {
+  color: var(--heading-color);
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.legend-content {
+  padding-top: 1rem;
+  border-top: 1px dashed var(--main-border-color);
+}
+
+.legend-content h6 {
+  color: var(--heading-color);
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.legend-item {
+  margin-bottom: 1rem;
+}
+
+.legend-desc {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.legend-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.legend-list li {
+  padding: 0.25rem 0;
+  color: var(--text-color);
+}
+
+.legend-list code {
+  background-color: var(--inline-code-bg);
+  color: var(--text-color);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .course-badges .badge {
@@ -231,6 +338,14 @@ layout: page
   
   .course-resources {
     margin-left: 0.5rem;
+  }
+  
+  .legend-content .row {
+    margin: 0;
+  }
+  
+  .legend-content .col-md-6 {
+    padding: 0 0.5rem;
   }
 }
 </style>
