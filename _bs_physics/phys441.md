@@ -16,10 +16,10 @@ Elementary particle physics including the Standard Model, particle interactions,
 
 **Prerequisites:** PHYS 310, PHYS 422
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys441/textbooks/Introduction to Elementary Particles, 2nd Edition by David Jeffery Griffiths (1).pdf">Introduction to Elementary Particles - Griffiths (2nd Edition)</a></li>
 <li><a href="/assets/resources/electives/phys441/textbooks/Griffiths_Particle_Physics_Solutions_Manual.pdf">Griffiths Solutions Manual</a></li>
@@ -28,7 +28,7 @@ Elementary particle physics including the Standard Model, particle interactions,
 </details>
 
 <details>
-<summary><strong>📊 Exams & Solutions</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys441/exams/PHYS 441-211 Major Exam-1 Solutions.docx">Major Exam 1 - Solutions</a></li>
 <li><a href="/assets/resources/electives/phys441/exams/PHYS 441-221 Major Exam-2 Solutions.docx">Major Exam 2 - Solutions</a></li>
@@ -38,7 +38,7 @@ Elementary particle physics including the Standard Model, particle interactions,
 </details>
 
 <details>
-<summary><strong>📋 Homework Assignments</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Homework Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys441/441HW1.pdf">Homework 1</a></li>
 <li><a href="/assets/resources/electives/phys441/441HW2.pdf">Homework 2</a></li>
@@ -48,7 +48,7 @@ Elementary particle physics including the Standard Model, particle interactions,
 </details>
 
 <details>
-<summary><strong>📖 Course Materials</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Course Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys441/Particle Detectors.pdf">Particle Detectors</a></li>
 </ul>

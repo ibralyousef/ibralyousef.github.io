@@ -16,10 +16,10 @@ Advanced topics in quantum mechanics including perturbation theory, scattering t
 
 **Prerequisites:** PHYS 310, MATH 301
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📋 Homework Assignments</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Homework Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys410/homework/NHW 1.pdf">Numerical Homework 1</a></li>
 <li><a href="/assets/resources/electives/phys410/homework/Numerical Homework II.docx">Numerical Homework 2</a></li>
@@ -30,7 +30,7 @@ Advanced topics in quantum mechanics including perturbation theory, scattering t
 </details>
 
 <details>
-<summary><strong>📖 Course Materials</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Course Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys410/Ch11_Summary.pdf">Chapter 11 Summary</a></li>
 <li><a href="/assets/resources/electives/phys410/Limitations of Perturbation Theory.pdf">Limitations of Perturbation Theory</a></li>
@@ -38,7 +38,7 @@ Advanced topics in quantum mechanics including perturbation theory, scattering t
 </details>
 
 <details>
-<summary><strong>💻 Computational Materials</strong></summary>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys410/NumericalSchrodingerEquation.nb">Numerical Schrödinger Equation</a></li>
 <li><a href="/assets/resources/electives/phys410/TransferMatrixApproach.nb">Transfer Matrix Approach</a></li>

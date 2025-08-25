@@ -16,10 +16,10 @@ Introduction to semiconductor physics and electronic devices including p-n junct
 
 **Prerequisites:** PHYS 201, PHYS 310
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys336/textbooks/Physics of Semiconductor Devices.pdf">Physics of Semiconductor Devices</a></li>
 <li><a href="/assets/resources/electives/phys336/textbooks/Semiconductor Physics and Devices Neaman.pdf">Semiconductor Physics and Devices - Neaman</a></li>
@@ -28,7 +28,7 @@ Introduction to semiconductor physics and electronic devices including p-n junct
 </details>
 
 <details>
-<summary><strong>📋 Homework Assignments</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Homework Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys336/336HW1.pdf">Homework 1</a></li>
 <li><a href="/assets/resources/electives/phys336/336HW2.pdf">Homework 2</a></li>
@@ -39,7 +39,7 @@ Introduction to semiconductor physics and electronic devices including p-n junct
 </details>
 
 <details>
-<summary><strong>📊 Quizzes & Exams</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Quizzes & Exams</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys336/336Q2.pdf">Quiz 2</a></li>
 <li><a href="/assets/resources/electives/phys336/336Q3.pdf">Quiz 3</a></li>
@@ -47,7 +47,7 @@ Introduction to semiconductor physics and electronic devices including p-n junct
 </details>
 
 <details>
-<summary><strong>📖 References & Materials</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> References & Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys336/336FormulaSheet.pdf">Formula Sheet 1</a></li>
 <li><a href="/assets/resources/electives/phys336/336FormulaSheet2.pdf">Formula Sheet 2</a></li>

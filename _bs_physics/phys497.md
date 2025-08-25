@@ -16,10 +16,10 @@ Independent research project under faculty supervision on topics in theoretical 
 
 **Prerequisites:** Senior standing, permission of instructor
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📋 Research Materials</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Research Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys497/497All.pdf">Complete Research Collection</a></li>
 <li><a href="/assets/resources/electives/phys497/497HW1.pdf">Research Assignment 1</a></li>
@@ -28,7 +28,7 @@ Independent research project under faculty supervision on topics in theoretical 
 </details>
 
 <details>
-<summary><strong>📊 Research Topics</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Research Topics</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys497/Kitaev Honeycomb Model.pdf">Kitaev Honeycomb Model</a></li>
 <li><a href="/assets/resources/electives/phys497/Summary of the Ising Model.pdf">Summary of the Ising Model</a></li>

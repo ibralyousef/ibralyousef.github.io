@@ -16,10 +16,10 @@ Statistical mechanics, thermodynamics, and kinetic theory with applications to p
 
 **Prerequisites:** PHYS 300, MATH 301
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys430/textbooks/dokumen.tips_schroeder-daniel-v-an-introduction-to-thermal-physics-addison-wesleypdf.pdf">Introduction to Thermal Physics - Schroeder</a></li>
 <li><a href="/assets/resources/electives/phys430/textbooks/dokumen.tips_solutions-schroeder-thermal-physics.pdf">Solutions Manual - Schroeder</a></li>
@@ -28,7 +28,7 @@ Statistical mechanics, thermodynamics, and kinetic theory with applications to p
 </details>
 
 <details>
-<summary><strong>📋 Homework Assignments</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Homework Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys430/430HW3.nb">Homework 3 (Mathematica)</a></li>
 <li><a href="/assets/resources/electives/phys430/430HW3.pdf">Homework 3 (PDF)</a></li>
@@ -43,7 +43,7 @@ Statistical mechanics, thermodynamics, and kinetic theory with applications to p
 </details>
 
 <details>
-<summary><strong>📊 Projects</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Projects</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys430/430ProjectFinale.gif">Project Animation</a></li>
 <li><a href="/assets/resources/electives/phys430/430ProjectFinalized.nb">Final Project (Mathematica)</a></li>

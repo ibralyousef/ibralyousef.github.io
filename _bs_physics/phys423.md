@@ -16,17 +16,17 @@ Nuclear reactor physics, neutron diffusion, criticality, reactor kinetics, contr
 
 **Prerequisites:** PHYS 422
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys423/textbooks/Lewis, E. - Fundamentals of Nuclear Reactor Physics-Academic Press (2008).nosynch.pdf">Fundamentals of Nuclear Reactor Physics - Lewis</a></li>
 </ul>
 </details>
 
 <details>
-<summary><strong>📖 Lecture Notes & Materials</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes & Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys423/notes/Lewis.Ch01.Nuclear.Reactions.docx">Chapter 1 - Nuclear Reactions</a></li>
 <li><a href="/assets/resources/electives/phys423/notes/Lewis.Ch02.Neutrons.Interactions.short.docx">Chapter 2 - Neutron Interactions</a></li>

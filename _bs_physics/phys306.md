@@ -16,10 +16,10 @@ Magnetostatics, magnetic fields, Faraday's law, electromagnetic induction, Maxwe
 
 **Prerequisites:** PHYS 305
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys306/textbooks/David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf">Introduction to Electrodynamics - Griffiths</a></li>
 <li><a href="/assets/resources/core/phys306/textbooks/Griffiths_Solutions.pdf">Griffiths Solutions Manual</a></li>
@@ -27,7 +27,7 @@ Magnetostatics, magnetic fields, Faraday's law, electromagnetic induction, Maxwe
 </details>
 
 <details>
-<summary><strong>📝 Homework & Assignments</strong></summary>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys306/homework/PHYS306-HMWK-1.pdf">Homework 1</a></li>
 <li><a href="/assets/resources/core/phys306/homework/PHYS306-HMWK-2.pdf">Homework 2</a></li>
@@ -40,7 +40,7 @@ Magnetostatics, magnetic fields, Faraday's law, electromagnetic induction, Maxwe
 </details>
 
 <details>
-<summary><strong>📖 Lecture Notes</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys306/notes/PHYS305-Ch07-Lec Notes-MBH.pdf">Chapter 7 - Lecture Notes</a></li>
 <li><a href="/assets/resources/core/phys306/notes/PHYS306-Ch08-Lec Notes-MBH(1).pdf">Chapter 8 - Lecture Notes</a></li>

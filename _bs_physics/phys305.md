@@ -16,10 +16,10 @@ Electrostatics, electric fields, Gauss's law, electric potential, capacitors, di
 
 **Prerequisites:** PHYS 102, MATH 202
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys305/textbooks/David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf">Introduction to Electrodynamics - Griffiths</a></li>
 <li><a href="/assets/resources/core/phys305/textbooks/Griffiths_Solutions.pdf">Griffiths Solutions Manual</a></li>
@@ -27,7 +27,7 @@ Electrostatics, electric fields, Gauss's law, electric potential, capacitors, di
 </details>
 
 <details>
-<summary><strong>📝 Homework & Assignments</strong></summary>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys305/homework/PHYS305-HMWK-1 (1).pdf">Homework 1</a></li>
 <li><a href="/assets/resources/core/phys305/homework/PHYS305-HMWK-2.pdf">Homework 2</a></li>
@@ -38,7 +38,7 @@ Electrostatics, electric fields, Gauss's law, electric potential, capacitors, di
 </details>
 
 <details>
-<summary><strong>📊 Exams & Solutions</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys305/exams/PHYS305-Major1-key.pdf">Major Exam I - Solution</a></li>
 <li><a href="/assets/resources/core/phys305/exams/PH7S305 2nd Major-key.pdf">Major Exam II - Solution</a></li>
@@ -49,7 +49,7 @@ Electrostatics, electric fields, Gauss's law, electric potential, capacitors, di
 </details>
 
 <details>
-<summary><strong>✅ Quizzes & Solutions</strong></summary>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys305/quizzes/quiz2-key.pdf">Quiz 2 - Solution</a></li>
 <li><a href="/assets/resources/core/phys305/quizzes/quiz3-key.pdf">Quiz 3 - Solution</a></li>
@@ -60,7 +60,7 @@ Electrostatics, electric fields, Gauss's law, electric potential, capacitors, di
 </details>
 
 <details>
-<summary><strong>📖 Lecture Notes</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys305/notes/PHYS305-Ch01-Sec2-3.pdf">Chapter 1 - Sections 2-3</a></li>
 <li><a href="/assets/resources/core/phys305/notes/PHYS305-Ch03-Lec Notes-MBH.pdf">Chapter 3 - Lecture Notes</a></li>

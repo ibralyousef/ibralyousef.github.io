@@ -16,10 +16,10 @@ Practical training in physics research or industrial applications during summer 
 
 **Prerequisites:** Completion of 60 credit hours
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📋 Training Materials</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Training Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys399/Final Presentation.pdf">Final Presentation</a></li>
 <li><a href="/assets/resources/electives/phys399/X-RayAssignment1.pdf">X-Ray Assignment 1</a></li>
@@ -29,7 +29,7 @@ Practical training in physics research or industrial applications during summer 
 </details>
 
 <details>
-<summary><strong>📋 Forms & Documents</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Forms & Documents</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys399/Calendar-Summer Training 213.pdf">Training Calendar</a></li>
 <li><a href="/assets/resources/electives/phys399/Contact Guide form.docx">Contact Guide Form</a></li>

@@ -16,10 +16,10 @@ Crystal structure, lattice dynamics, electronic properties of solids, band theor
 
 **Prerequisites:** PHYS 310, PHYS 305
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys432/textbooks/kittel.pdf">Introduction to Solid State Physics - Kittel</a></li>
 <li><a href="/assets/resources/electives/phys432/textbooks/PHYS 432_Course  Syllabus_T 222.pdf">Course Syllabus</a></li>
@@ -27,7 +27,7 @@ Crystal structure, lattice dynamics, electronic properties of solids, band theor
 </details>
 
 <details>
-<summary><strong>📖 Lecture Notes & Slides</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes & Slides</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys432/notes/CH1-KA.pdf">Chapter 1 - Lecture Slides</a></li>
 <li><a href="/assets/resources/electives/phys432/notes/CH2-KA(2).pdf">Chapter 2 - Lecture Slides</a></li>

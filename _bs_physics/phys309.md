@@ -16,10 +16,10 @@ Advanced experimental techniques in physics including statistical analysis, inst
 
 **Prerequisites:** PHYS 201, PHYS 102
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📋 Homework Assignments</strong></summary>
+<summary><strong><i class="fas fa-clipboard-list"></i> Homework Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys309/HW1.pdf">Homework 1</a></li>
 <li><a href="/assets/resources/electives/phys309/HW2.pdf">Homework 2</a></li>
@@ -27,7 +27,7 @@ Advanced experimental techniques in physics including statistical analysis, inst
 </details>
 
 <details>
-<summary><strong>🧪 Lab Materials</strong></summary>
+<summary><strong><i class="fas fa-flask"></i> Lab Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys309/ComptonEdge.pdf">Compton Edge Lab</a></li>
 <li><a href="/assets/resources/electives/phys309/CountingStat.pdf">Counting Statistics</a></li>
@@ -40,7 +40,7 @@ Advanced experimental techniques in physics including statistical analysis, inst
 </details>
 
 <details>
-<summary><strong>📊 Projects</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Projects</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys309/PHYS309_XRDProject.pdf">XRD Project</a></li>
 <li><a href="/assets/resources/electives/phys309/Phys309 Presentation.pptx">Course Presentation</a></li>
@@ -49,7 +49,7 @@ Advanced experimental techniques in physics including statistical analysis, inst
 </details>
 
 <details>
-<summary><strong>📖 Lab Manuals</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Lab Manuals</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys309/Physics 309 LAB-write-up-master.pdf">Lab Write-up Master</a></li>
 <li><a href="/assets/resources/electives/phys309/Physics 309 Lab experiments Schedule.pdf">Lab Experiments Schedule</a></li>

@@ -16,10 +16,10 @@ Advanced laboratory experiments in modern physics including atomic, nuclear, and
 
 **Prerequisites:** PHYS 309, PHYS 310
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>🧪 Lab Experiments</strong></summary>
+<summary><strong><i class="fas fa-flask"></i> Lab Experiments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys403/ESR403.pdf">Electron Spin Resonance (ESR)</a></li>
 <li><a href="/assets/resources/electives/phys403/LDS403.pdf">Laser Diode Spectroscopy (LDS)</a></li>
@@ -29,14 +29,14 @@ Advanced laboratory experiments in modern physics including atomic, nuclear, and
 </details>
 
 <details>
-<summary><strong>📊 Projects</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Projects</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys403/Project403.pdf">Senior Lab Project</a></li>
 </ul>
 </details>
 
 <details>
-<summary><strong>🔬 Detailed Experiment Guides</strong></summary>
+<summary><strong><i class="fas fa-microscope"></i> Detailed Experiment Guides</strong></summary>
 <ul>
 <li><strong>ESR (Electron Spin Resonance):</strong>
   <ul>

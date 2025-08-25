@@ -16,17 +16,17 @@ Electronic devices, semiconductor physics, diodes, transistors, amplifiers, digi
 
 **Prerequisites:** PHYS 305
 
-## 📚 Course Resources
+## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong>📚 Textbooks & References</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys308/textbooks/Electronic Principles Eighth Edition Edited by Albert Malvino and David Bates.pdf">Electronic Principles - Malvino & Bates (8th Edition)</a></li>
 </ul>
 </details>
 
 <details>
-<summary><strong>📝 Homework & Solutions</strong></summary>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys308/homework/Homework 1 (solution).docx">Homework 1 - Solution</a></li>
 <li><a href="/assets/resources/electives/phys308/homework/Homework 2 (solution) (1).docx">Homework 2 - Solution</a></li>
@@ -34,7 +34,7 @@ Electronic devices, semiconductor physics, diodes, transistors, amplifiers, digi
 </details>
 
 <details>
-<summary><strong>📊 Exams & Solutions</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys308/exams/First Major Exam (solution) (1).docx">First Major Exam - Solution</a></li>
 <li><a href="/assets/resources/electives/phys308/exams/Second Major Exam (solution).docx">Second Major Exam - Solution</a></li>
