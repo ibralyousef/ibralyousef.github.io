@@ -1,0 +1,599 @@
+---
+# No parent layout to avoid HTML compression in production mode
+---
+
+<!doctype html>
+
+{% include origin-type.html %}
+{% include lang.html %}
+
+<html lang="{{ site.data.locales[lang].name | default: lang }}"{% if lang == 'ko_KR' %} class="notranslate" translate="no"{% endif %}>
+  {% include head.html %}
+  <body>
+    {% include sidebar.html lang=lang %}
+    {% include topbar.html lang=lang %}
+
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div class="container d-flex flex-column px-xxl-5">
+        <div class="row flex-grow-1">
+          <main class="col-12 col-lg-11 col-xl-9 px-md-4">
+            {% if page.content %}
+              {% include lang.html %}
+              {{ page.content }}
+            {% endif %}
+
+<!-- Q.js Stylesheets -->
+<link rel="stylesheet" href="{{ '/assets/css/qjs/Q.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/qjs/Q-Circuit-Editor.css' | relative_url }}">
+
+<style>
+/* Custom styles for QC Playground */
+.qc-playground {
+  margin-top: 2rem;
+}
+
+.playground-input-section {
+  margin-bottom: 2rem;
+}
+
+.Q-circuit-text-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  border: 2px solid var(--main-border-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  resize: vertical;
+}
+
+.Q-circuit-text-input:focus {
+  outline: none;
+  border-color: var(--link-color);
+  box-shadow: 0 0 0 3px rgba(var(--link-color-rgb), 0.1);
+}
+
+.Q-button {
+  background-color: var(--link-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.Q-button:hover {
+  background-color: var(--link-underline-color);
+}
+
+.playground-output {
+  margin-top: 2rem;
+}
+
+.output-section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.output-section h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+  font-size: 1.1rem;
+}
+
+.output-section p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.output-section pre {
+  background-color: var(--code-bg);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.Q-circuit-palette {
+  margin: 1rem 0;
+}
+
+#playground {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  min-height: 200px;
+}
+
+/* Sample circuits section */
+.sample-circuits {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--main-border-color);
+}
+
+.sample-circuit {
+  background-color: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.sample-circuit:hover {
+  border-color: var(--link-color);
+}
+
+.sample-circuit h6 {
+  margin: 0 0 0.5rem 0;
+  color: var(--heading-color);
+}
+
+.sample-circuit p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.sample-circuit code {
+  background-color: var(--code-bg);
+  color: var(--text-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Removed all Q.js CSS overrides to prevent functionality issues */
+
+/* Compact Sample Circuits */
+.sample-circuits-compact {
+  margin-bottom: 2rem;
+}
+
+.sample-circuits-compact h5 {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.circuits-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.circuit-pill {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.circuit-pill:hover {
+  border-color: var(--link-color);
+  color: var(--link-color);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.circuit-pill:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 576px) {
+  .circuits-row {
+    gap: 0.3rem;
+  }
+  .circuit-pill {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .Q-circuit-text-input {
+    font-size: 12px;
+  }
+  
+  .output-section {
+    padding: 1rem;
+  }
+  
+  .output-section pre {
+    font-size: 0.75rem;
+  }
+}
+</style>
+
+{{ content }}
+
+<div class="qc-playground">
+  <!-- Compact Sample Circuits -->
+  <div class="sample-circuits-compact">
+    <h4><i class="fas fa-lightbulb me-2"></i>Quick Start - Sample Circuits</h4>
+    <p class="mb-3">Click any circuit to load it instantly:</p>
+    
+    <h5>Basic</h5>
+    <div class="circuits-row">
+      <span class="circuit-pill" onclick="loadSampleCircuit('superposition')">Superposition</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('bell')">Bell State</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('bellModified')">Bell + X</span>
+    </div>
+    
+    <h5>Intermediate</h5>
+    <div class="circuits-row">
+      <span class="circuit-pill" onclick="loadSampleCircuit('deutsch')">Deutsch Algorithm</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('toffoli')">Toffoli Gate</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('ghz')">GHZ State</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('swapTest')">Swap Test</span>
+    </div>
+    
+    <h5>Advanced</h5>
+    <div class="circuits-row">
+      <span class="circuit-pill" onclick="loadSampleCircuit('qft2')">2-Qubit QFT</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('teleportation')">Teleportation</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('grover2')">Grover Search</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('phaseKickback')">Phase Kickback</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('catState')">Cat State</span>
+    </div>
+  </div>
+
+  <!-- Input Section -->
+  <div class="playground-input-section">
+    <h4><i class="fas fa-edit me-2"></i>Circuit Editor</h4>
+    
+    <textarea class="Q-circuit-text-input" id="playground-input" placeholder="Enter your quantum circuit...
+Example:
+H-X#0-I
+I-X#1-I">H-I-X#0-I---I-H
+H-I-I---X#0-I-H
+X-H-X#1-X#1-H-X
+I-I-I---I---I-I</textarea>
+    
+    <div class="text-end mt-3">
+      <button class="Q-button" id="playground-apply-button" type="button">
+        <i class="fas fa-play me-2"></i>Apply Circuit
+      </button>
+    </div>
+  </div>
+
+  <!-- Circuit Visualization -->
+  <div class="output-section">
+    <h4><i class="fas fa-eye me-2"></i>Circuit Visualization</h4>
+    
+    <div class='Q-circuit-palette'></div>
+    <div id="playground"></div>
+  </div>
+
+  <!-- Results Section -->
+  <div class="playground-output">
+    <div class="output-section">
+      <h4><i class="fas fa-chart-bar me-2"></i>Measurement Probabilities</h4>
+      <pre><code id="playground-report">Apply a circuit to see measurement results...</code></pre>
+    </div>
+
+    <div class="output-section">
+      <h4><i class="fas fa-code me-2"></i>ASCII Circuit Diagram</h4>
+      <pre><code id="playground-diagram">Apply a circuit to see ASCII diagram...</code></pre>
+    </div>
+
+    <div class="output-section">
+      <h4><i class="fab fa-latex me-2"></i>LaTeX Export</h4>
+      <pre><code id="playground-latex">Apply a circuit to see LaTeX code...</code></pre>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Q.js JavaScript Files -->
+<script src="{{ '/assets/js/qjs/Q.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/qjs/Q-ComplexNumber.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/qjs/Q-Matrix.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/qjs/Q-Qubit.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/qjs/Q-Gate.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/qjs/Q-History.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/qjs/Q-Circuit.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/qjs/Q-Circuit-Editor.js' | relative_url }}"></script>
+
+<script>
+// QC Playground JavaScript using correct Q.js API
+let currentCircuit = null;
+let playgroundInputText = '';
+
+// Sample circuits data organized by difficulty
+const sampleCircuits = {
+  // Basic Circuits
+  superposition: `H`,
+  bell: `H-X#0
+I-X#1`,
+  bellModified: `H-X#0-X
+I-X#1-X`,
+  
+  // Intermediate Circuits
+  deutsch: `H-I-H-I
+H-X-I-H`,
+  toffoli: `I-I-X#2
+I-I-X#2
+X-X-X#2`,
+  ghz: `H-X#1-X#2
+I-X#1-I
+I-I---X#2`,
+  swapTest: `H-I---I-H
+I-X#2-X-I
+I-X#2-I-I`,
+  
+  // Advanced Circuits
+  qft2: `I-H-S#1-H
+H-I-I---I`,
+  teleportation: `I---I-H-I-X#1-Z#2
+I---I-I-I-I---I
+H-X#0-I-H-I---I`,
+  grover2: `H-X-H-X-H
+H-X-H-X-H`,
+  phaseKickback: `H-I-I-Z#0-I-H
+I-H-Z-Z#0-H-I`,
+  catState: `H-X#1-X#2-X#3
+I-X#1-I---I
+I-I---X#2-I
+I-I---I---X#3`
+};
+
+// Load a sample circuit into the editor
+function loadSampleCircuit(circuitName) {
+  const circuit = sampleCircuits[circuitName];
+  if (circuit) {
+    document.getElementById('playground-input').value = circuit;
+    updatePlaygroundFromText();
+  }
+}
+
+// Check if text input has been updated (for button state)
+function hasTextInputUpdated() {
+  const input = document.getElementById('playground-input').value;
+  const button = document.getElementById('playground-apply-button');
+  
+  if (input === playgroundInputText) {
+    button.setAttribute('disabled', 'disabled');
+  } else {
+    button.removeAttribute('disabled');
+  }
+}
+
+// Update playground from text input (main function)
+function updatePlaygroundFromText() {
+  const text = document.getElementById('playground-input').value.trim();
+  
+  if (!text) {
+    clearPlayground();
+    return;
+  }
+  
+  if (text !== playgroundInputText) {
+    playgroundInputText = text;
+    document.getElementById('playground-apply-button').setAttribute('disabled', 'disabled');
+    
+    try {
+      // Create circuit using Q.js API
+      const circuit = Q(text);
+      
+      if (circuit instanceof Q.Circuit) {
+        currentCircuit = circuit;
+        currentCircuit.name = 'playground';
+        
+        // Clear and update DOM visualization
+        const domEl = document.getElementById('playground');
+        if (domEl) {
+          // Clear previous content
+          while (domEl.lastChild) {
+            domEl.removeChild(domEl.lastChild);
+          }
+          
+          // Sort and render circuit
+          currentCircuit.sort$();
+          currentCircuit.toDom(domEl);
+        }
+        
+        // Evaluate circuit
+        currentCircuit.evaluate$();
+        
+        // Update all export formats
+        updateCircuitParts(currentCircuit);
+        
+      } else {
+        // Handle invalid circuit
+        handleCircuitError(new Error('Invalid circuit syntax'));
+      }
+      
+    } catch (error) {
+      console.error('Circuit error:', error);
+      handleCircuitError(error);
+    }
+  }
+}
+
+// Update playground from DOM changes (for interactive editing)
+function updatePlaygroundFromDom(circuit) {
+  const inputEl = document.getElementById('playground-input');
+  if (inputEl && circuit) {
+    const text = circuit.toText().substr(1); // Remove first character
+    inputEl.value = text;
+    circuit.evaluate$();
+    playgroundInputText = text;
+    updateCircuitParts(circuit);
+  }
+}
+
+// Update all circuit export parts
+function updateCircuitParts(circuit) {
+  if (!circuit) return;
+  
+  // Update probability report
+  const reportEl = document.getElementById('playground-report');
+  if (reportEl) {
+    try {
+      reportEl.textContent = circuit.report$() || 'No measurement results available';
+    } catch (error) {
+      reportEl.textContent = 'Error generating probability report: ' + error.message;
+    }
+  }
+  
+  // Update ASCII diagram
+  const diagramEl = document.getElementById('playground-diagram');
+  if (diagramEl) {
+    try {
+      diagramEl.textContent = circuit.toDiagram(true) || 'Diagram not available';
+    } catch (error) {
+      diagramEl.textContent = 'Error generating ASCII diagram: ' + error.message;
+    }
+  }
+  
+  // Update LaTeX export
+  const latexEl = document.getElementById('playground-latex');
+  if (latexEl) {
+    try {
+      latexEl.textContent = '\n' + circuit.toLatex(true) || 'LaTeX export not available';
+    } catch (error) {
+      latexEl.textContent = 'Error generating LaTeX: ' + error.message;
+    }
+  }
+  
+}
+
+// Clear playground
+function clearPlayground() {
+  document.getElementById('playground').innerHTML = '';
+  document.getElementById('playground-report').textContent = 'Apply a circuit to see measurement results...';
+  document.getElementById('playground-diagram').textContent = 'Apply a circuit to see ASCII diagram...';
+  document.getElementById('playground-latex').textContent = 'Apply a circuit to see LaTeX code...';
+  currentCircuit = null;
+  playgroundInputText = '';
+}
+
+// Handle circuit errors
+function handleCircuitError(error) {
+  const errorMsg = `Circuit Error: ${error.message}\n\nPlease check your circuit syntax. Common issues:\n- Use 'I' for identity gates\n- Use proper gate notation (H, X, Y, Z, etc.)\n- Ensure controlled gates have proper syntax (#0, #1, etc.)\n- Make sure all rows have the same length`;
+  
+  document.getElementById('playground').innerHTML = `<div style="color: #dc3545; padding: 1rem; border: 1px solid #dc3545; border-radius: 4px; background-color: rgba(220, 53, 69, 0.1);">${errorMsg}</div>`;
+  
+  document.getElementById('playground-report').textContent = 'Fix circuit errors to see results';
+  document.getElementById('playground-diagram').textContent = 'Fix circuit errors to see diagram';
+  document.getElementById('playground-latex').textContent = 'Fix circuit errors to see LaTeX';
+}
+
+// Q.js Event Listeners for circuit evaluation
+window.addEventListener('Q.Circuit.evaluate began', function(event) {
+  console.log(
+    '\n\nBeginning evaluation for "' + event.detail.circuit.name + '"\n' +
+    event.detail.circuit.toDiagram() + '\n\n'
+  );
+});
+
+window.addEventListener('Q.Circuit.evaluate progressed', function(event) {
+  const length = 20;
+  const percent = Math.round(event.detail.progress * 100);
+  const percentText = ('' + percent).padStart(3) + '%';
+  const barLength = Math.round(length * event.detail.progress);
+  const barComplete = ''.padStart(barLength, '█');
+  const barIncomplete = ''.padStart(length - barLength, '░');
+  
+  console.log(barComplete + barIncomplete + '  ' + percentText + '   ' + 
+              event.detail.operationIndex + ' of ' + event.detail.operationsTotal);
+});
+
+window.addEventListener('Q.Circuit.evaluate completed', function(event) {
+  console.log(
+    '\n\nEvaluation completed for "' + event.detail.circuit.name + '"\n' +
+    'with these results:\n\n' + event.detail.circuit.report$() + '\n\n'
+  );
+  
+  // Update the display after evaluation completes
+  if (event.detail.circuit.name === 'playground') {
+    updateCircuitParts(event.detail.circuit);
+  }
+});
+
+// Handle interactive circuit editor changes (correct event name from Q.js)
+window.addEventListener('Q gui altered circuit', function(event) {
+  if (event.detail && event.detail.circuit && event.detail.circuit.name === 'playground') {
+    // Automatically update when circuit is modified
+    updatePlaygroundFromDom(event.detail.circuit);
+  }
+});
+
+// DOM Ready event handler
+window.addEventListener('DOMContentLoaded', function() {
+  
+  // Initialize circuit palette
+  Array.from(document.querySelectorAll('.Q-circuit-palette')).forEach(function(el) {
+    try {
+      Q.Circuit.Editor.createPalette(el);
+    } catch (error) {
+      console.warn('Could not create circuit palette:', error);
+    }
+  });
+  
+  // Apply button click handler
+  document.getElementById('playground-apply-button').addEventListener('click', updatePlaygroundFromText);
+  
+  // Enter key handler for textarea
+  document.getElementById('playground-input').addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+      e.preventDefault();
+      updatePlaygroundFromText();
+    }
+  });
+  
+  // Initialize with default circuit
+  updatePlaygroundFromText();
+  
+  // Check for text updates periodically
+  setInterval(hasTextInputUpdated, 100);
+});
+</script>
+
+            </main>
+          </div>
+        </div>
+      </div>
+
+    {% include footer.html lang=lang %}
+
+    <div id="mask"></div>
+
+    {% include search-results.html lang=lang %}
+    {% include js-selector.html %}
+
+  </body>
+</html>
