@@ -1,0 +1,110 @@
+---
+layout: page
+---
+
+{% include lang.html %}
+
+<!-- Event Header -->
+<div class="event-header mb-4">
+  <h1 class="event-title mb-2">{{ page.title }}</h1>
+  
+  <div class="event-meta">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="event-info">
+          <span class="text-muted me-3"><strong>Presenter:</strong> {{ page.presenter }}</span><br>
+          <span class="text-muted me-3"><strong>Date:</strong> {{ page.event_date | date: "%A, %B %d, %Y" }}</span><br>
+          <span class="text-muted me-3"><strong>Time:</strong> {{ page.time }}</span><br>
+          <span class="text-muted me-3"><strong>Location:</strong> {{ page.location }}</span>
+        </div>
+      </div>
+      <div class="col-md-4 text-md-end">
+        {% if page.registration_url and page.registration_url != "" %}
+          <a href="{{ page.registration_url }}" class="btn btn-outline-secondary" target="_blank" rel="noopener">
+            <i class="fas fa-user-plus me-2"></i>Register
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation Breadcrumbs -->
+<nav aria-label="breadcrumb" class="mb-4">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="{{ '/umq-reading-group/' | relative_url }}">
+        <i class="fas fa-book-open"></i> UMQ Reading Group
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.event_date | date: "%B %d, %Y" }}</li>
+  </ol>
+</nav>
+
+<!-- Event Content (Markdown) -->
+<div class="event-content">
+  {{ content }}
+</div>
+
+<!-- Back to Reading Group Button -->
+<div class="mt-5 text-center">
+  <a href="{{ '/umq-reading-group/' | relative_url }}" class="btn btn-outline-secondary">
+    ← Back to UMQ Reading Group
+  </a>
+</div>
+
+<style>
+.event-header {
+  padding: 1.5rem 0;
+}
+
+.event-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.event-info {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.event-content {
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  padding: 0.5rem 0;
+  background: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  color: var(--text-muted);
+}
+
+.breadcrumb-item a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event-title {
+    font-size: 1.4rem;
+  }
+  
+  .event-header {
+    padding: 1rem 0;
+  }
+}
+</style>

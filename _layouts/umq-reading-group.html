@@ -1,0 +1,345 @@
+---
+layout: page
+---
+
+{% include lang.html %}
+
+<!-- Find the next event to display -->
+{% assign next_event = null %}
+{% for event in site.umq_events %}
+  {% unless event.hidden %}
+    {% if event.show_as_next %}
+      {% assign next_event = event %}
+      {% break %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+
+<!-- Next Event Card - TOP PRIORITY -->
+{% if next_event %}
+<div class="card categories mb-4">
+  <div class="card-header d-flex justify-content-between hide-border-bottom">
+    <span class="ms-2">
+      <i class="fas fa-calendar-plus fa-fw"></i>
+      <span class="mx-2 event-section-title">Next Event</span>
+    </span>
+  </div>
+  <div class="card-body pb-4">
+    <h6 class="event-title mb-3">{{ next_event.title }}</h6>
+    
+    <!-- Event badges -->
+    <div class="event-badges mb-3">
+      <span class="badge badge-type me-1">{{ next_event.event_date | date: "%A" }}</span>
+      <span class="badge badge-credits me-1">{{ next_event.event_date | date: "%b %d, %Y" }}</span>
+      {% if next_event.time %}
+        <span class="badge badge-semester me-1">{{ next_event.time }}</span>
+      {% endif %}
+      <span class="badge badge-type me-1">Upcoming</span>
+    </div>
+    
+    <div class="event-meta mb-3">
+      <div class="meta-item">
+        <small class="text-muted">
+          <i class="fas fa-user fa-xs me-1"></i>
+          <strong>Presenter:</strong> {{ next_event.presenter }}
+        </small>
+      </div>
+      <div class="meta-item">
+        <small class="text-muted">
+          <i class="fas fa-map-marker-alt fa-xs me-1"></i>
+          <strong>Location:</strong> {{ next_event.location }}
+        </small>
+      </div>
+      <div class="meta-item">
+        <small class="text-muted">
+          <i class="fas fa-book fa-xs me-1"></i>
+          <strong>Reading:</strong> 
+          {% if next_event.reading_url %}
+            <a href="{{ next_event.reading_url }}" target="_blank" rel="noopener">{{ next_event.reading_material }}</a>
+          {% else %}
+            {{ next_event.reading_material }}
+          {% endif %}
+        </small>
+      </div>
+    </div>
+    
+    <div class="abstract mb-3">
+      <small class="text-muted">
+        <strong>Abstract:</strong> {{ next_event.abstract }}
+      </small>
+    </div>
+    
+    
+    <div class="mt-3 text-center">
+      {% if next_event.registration_url and next_event.registration_url != "" %}
+        <a href="{{ next_event.registration_url }}" class="btn btn-outline-secondary btn-lg me-2" target="_blank" rel="noopener">
+          <i class="fas fa-user-plus me-2"></i>Register
+        </a>
+      {% endif %}
+      <a href="{{ next_event.url | relative_url }}" class="btn btn-outline-secondary btn-lg">
+        <i class="fas fa-info-circle me-2"></i>Details
+      </a>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{{ content }}
+
+<!-- All Events Section -->
+<div class="card categories">
+  <div class="card-header d-flex justify-content-between hide-border-bottom">
+    <span class="ms-2">
+      <i class="fas fa-history fa-fw"></i>
+      <span class="mx-2 event-section-title">All Events</span>
+      {% assign all_events = site.umq_events | where_exp: "event", "event.hidden != true" %}
+      <span class="text-muted small font-weight-light">
+        {{ all_events.size }}
+        {% if all_events.size == 1 %}event{% else %}events{% endif %}
+      </span>
+    </span>
+  </div>
+  <div class="card-body">
+    {% assign sorted_events = all_events | sort: "event_date" | reverse %}
+    
+    {% if sorted_events.size > 0 %}
+      <ul class="list-group">
+        {% for event in sorted_events %}
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="event-main-info flex-grow-1">
+                <div class="event-header-line">
+                  <i class="fas fa-calendar fa-fw"></i>
+                  <a href="{{ event.url | relative_url }}" class="mx-2 event-link">
+                    {{ event.title }}
+                  </a>
+                </div>
+                
+                <!-- Event badges -->
+                <div class="event-badges mt-2 ms-4">
+                  <span class="badge badge-type me-1">{{ event.event_date | date: "%A" }}</span>
+                  <span class="badge badge-credits me-1">{{ event.event_date | date: "%b %d, %Y" }}</span>
+                  {% if event.time %}
+                    <span class="badge badge-semester me-1">{{ event.time }}</span>
+                  {% endif %}
+                  {% if event.show_as_next %}
+                    <span class="badge badge-type me-1">Upcoming</span>
+                  {% endif %}
+                </div>
+                
+                <!-- Presenter info -->
+                {% if event.presenter %}
+                  <div class="event-presenter mt-2 ms-4">
+                    <small class="text-muted">
+                      <i class="fas fa-user fa-xs me-1"></i>
+                      <strong>Presenter:</strong> {{ event.presenter }}
+                    </small>
+                  </div>
+                {% endif %}
+                
+                <!-- Location -->
+                {% if event.location %}
+                  <div class="event-location mt-1 ms-4">
+                    <small class="text-muted">
+                      <i class="fas fa-map-marker-alt fa-xs me-1"></i>
+                      <strong>Location:</strong> {{ event.location }}
+                    </small>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="text-muted mb-0">No events scheduled yet.</p>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Join Section -->
+<div class="card categories mb-4">
+  <div class="card-header d-flex justify-content-between hide-border-bottom">
+    <span class="ms-2">
+      <i class="fas fa-users fa-fw"></i>
+      <span class="mx-2 event-section-title">Join Us</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <div class="join-links">
+      <a href="https://forms.gle/8qfaEgujNGw2xycSA" class="btn btn-outline-secondary" target="_blank" rel="noopener">
+        <i class="fas fa-user-friends me-2"></i>Join UMQ
+      </a>
+      <a href="https://forms.gle/cWizbj2dNbD5GPSH7" class="btn btn-outline-secondary" target="_blank" rel="noopener">
+        <i class="fas fa-book-reader me-2"></i>Join Reading Group
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Section title styling - same as BS Physics */
+.event-section-title {
+  font-weight: normal;
+  color: var(--heading-color);
+}
+
+.event-title {
+  color: var(--heading-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Meta items styling */
+.meta-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.meta-item strong {
+  margin-right: 0.5rem;
+}
+
+.meta-item a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.meta-item a:hover {
+  text-decoration: underline;
+}
+
+.abstract {
+  line-height: 1.6;
+}
+
+.abstract strong {
+  margin-right: 0.5rem;
+}
+
+.join-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.join-links .btn {
+  min-width: 140px;
+}
+
+/* Event styling - matching BS Physics courses */
+.event-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.event-link:hover {
+  text-decoration: underline;
+}
+
+.event-main-info {
+  min-width: 0; /* Allow flex item to shrink */
+}
+
+.event-badges .badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.event-presenter, .event-location {
+  line-height: 1.3;
+}
+
+/* Badge styles - match BS Physics exactly */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.badge-credits {
+  background-color: var(--btn-border-color);
+  color: var(--text-color);
+  border: 1px solid var(--main-border-color);
+}
+
+.badge-semester {
+  background-color: var(--tag-border);
+  color: var(--text-color);
+  border: 1px solid var(--main-border-color);
+}
+
+.badge-type {
+  background-color: var(--card-bg);
+  color: var(--label-color);
+  border: 1px solid var(--main-border-color);
+}
+
+/* Fix button styles - override all .content link styles */
+.content .btn.btn-outline-secondary,
+.card-body .btn.btn-outline-secondary,
+.content a.btn.btn-outline-secondary,
+.card-body a.btn.btn-outline-secondary,
+.btn.btn-outline-secondary:link,
+.btn.btn-outline-secondary:visited {
+  color: #6c757d !important;
+  background-color: transparent !important;
+  border: 1px solid #6c757d !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.1rem !important;
+  line-height: 1.5 !important;
+  border-radius: 0.375rem !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  width: auto !important;
+  overflow: visible !important;
+}
+
+.content .btn.btn-outline-secondary:hover,
+.card-body .btn.btn-outline-secondary:hover,
+.content a.btn.btn-outline-secondary:hover,
+.card-body a.btn.btn-outline-secondary:hover,
+.btn.btn-outline-secondary:hover,
+.btn.btn-outline-secondary:active,
+.btn.btn-outline-secondary:focus {
+  color: #fff !important;
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  text-decoration: none !important;
+}
+
+/* Ensure button container doesn't clip */
+.card-body .mt-3 {
+  overflow: visible !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .event-badges .badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .meta-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .join-links {
+    justify-content: flex-start;
+  }
+}
+</style>
