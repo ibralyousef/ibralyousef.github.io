@@ -1,7 +1,7 @@
 ---
 layout: umq-reading-group
 icon: fas fa-book-open
-order: 4
+order: 3
 title: UMQ Reading Group
 ---
 

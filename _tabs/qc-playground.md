@@ -1,7 +1,7 @@
 ---
 layout: qc-playground
 icon: fas fa-microchip
-order: 3
+order: 4
 title: QC Playground
 ---
 

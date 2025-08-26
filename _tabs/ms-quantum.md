@@ -1,7 +1,7 @@
 ---
 layout: ms-quantum-resources
 icon: fas fa-atom
-order: 3
+order: 2
 title: MS in Quantum Computing
 ---
 

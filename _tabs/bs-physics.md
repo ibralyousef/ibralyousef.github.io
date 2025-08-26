@@ -1,7 +1,7 @@
 ---
 layout: bs-physics-resources
 icon: fas fa-graduation-cap
-order: 2
+order: 1
 title: BS in Physics
 ---
 
