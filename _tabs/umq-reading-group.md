@@ -5,8 +5,6 @@ order: 4
 title: UMQ Reading Group
 ---
 
-Monthly discussions on quantum computing research papers.
-
 ## About
 
 **UMQ** bridges academia and industry, supporting technical professionals through collaboration and mentorship.
