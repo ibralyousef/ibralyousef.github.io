@@ -1,7 +1,7 @@
 ---
 layout: qc-playground
 icon: fas fa-microchip
-order: 4
+order: 3
 title: QC Playground
 ---
 
@@ -23,11 +23,5 @@ Interactive quantum circuit simulator powered by [Q.js](https://quantumjavascrip
 2. Click "Apply" to render the circuit and see results
 3. Experiment with the sample circuits provided
 4. Export your circuits for use in documentation or presentations
-
-Start with something simple like a Bell state:
-```
-H-X#0
-I-X#1
-```
 
 Or try the loaded example circuit to see how entanglement works!

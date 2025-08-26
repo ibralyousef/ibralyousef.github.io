@@ -587,31 +587,36 @@ Q.Circuit.Editor.set = function( circuitEl, operation ){
 					return registerIndex !== siblingRegisterIndex
 				})
 			)
-			operation.registerIndices.forEach( function( registerIndex, i ){
+			
+			//  Create the connecting lines only once per multi-qubit operation
+			//  (when processing the first register index)
+			if( i === 0 ){
+				operation.registerIndices.forEach( function( regIndex, j ){
 
-				if( i < operation.registerIndices.length - 1 ){			
+					if( j < operation.registerIndices.length - 1 ){			
 
-					const 
-					siblingRegisterIndex = operation.registerIndices[ i + 1 ],
-					registerDelta = Math.abs( siblingRegisterIndex - registerIndex ),
-					start = Math.min( registerIndex, siblingRegisterIndex ),
-					end   = Math.max( registerIndex, siblingRegisterIndex ),
-					containerEl = document.createElement( 'div' ),
-					linkEl = document.createElement( 'div' )
+						const 
+						siblingRegisterIndex = operation.registerIndices[ j + 1 ],
+						registerDelta = Math.abs( siblingRegisterIndex - regIndex ),
+						start = Math.min( regIndex, siblingRegisterIndex ),
+						end   = Math.max( regIndex, siblingRegisterIndex ),
+						containerEl = document.createElement( 'div' ),
+						linkEl = document.createElement( 'div' )
 
-					backgroundEl.appendChild( containerEl )							
-					containerEl.setAttribute( 'moment-index', operation.momentIndex )
-					containerEl.setAttribute( 'register-index', registerIndex )
-					containerEl.classList.add( 'Q-circuit-operation-link-container' )
-					containerEl.style.gridRowStart = Q.Circuit.Editor.registerIndexToGridRow( start )
-					containerEl.style.gridRowEnd   = Q.Circuit.Editor.registerIndexToGridRow( end + 1 )
-					containerEl.style.gridColumn   = Q.Circuit.Editor.momentIndexToGridColumn( operation.momentIndex )
+						backgroundEl.appendChild( containerEl )							
+						containerEl.setAttribute( 'moment-index', operation.momentIndex )
+						containerEl.setAttribute( 'register-index', regIndex )
+						containerEl.classList.add( 'Q-circuit-operation-link-container' )
+						containerEl.style.gridRowStart = Q.Circuit.Editor.registerIndexToGridRow( start )
+						containerEl.style.gridRowEnd   = Q.Circuit.Editor.registerIndexToGridRow( end + 1 )
+						containerEl.style.gridColumn   = Q.Circuit.Editor.momentIndexToGridColumn( operation.momentIndex )
 
-					containerEl.appendChild( linkEl )
-					linkEl.classList.add( 'Q-circuit-operation-link' )
-					if( registerDelta > 1 ) linkEl.classList.add( 'Q-circuit-operation-link-curved' )
-				}
-			})
+						containerEl.appendChild( linkEl )
+						linkEl.classList.add( 'Q-circuit-operation-link' )
+						if( registerDelta > 1 ) linkEl.classList.add( 'Q-circuit-operation-link-curved' )
+					}
+				})
+			}
 			if( operation.isControlled && i === 0 ){
 
 				operationEl.classList.add( 'Q-circuit-operation-control' )

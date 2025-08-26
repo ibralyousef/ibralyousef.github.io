@@ -1,5 +1,5 @@
 ---
-# No parent layout to avoid HTML compression in production mode
+# No parent layout to avoid HTML compression breaking JavaScript
 ---
 
 <!doctype html>
@@ -7,16 +7,22 @@
 {% include origin-type.html %}
 {% include lang.html %}
 
-<html lang="{{ site.data.locales[lang].name | default: lang }}"{% if lang == 'ko_KR' %} class="notranslate" translate="no"{% endif %}>
+{% if site.theme_mode %}
+  {% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %}
+{% endif %}
+
+<html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
+
   <body>
     {% include sidebar.html lang=lang %}
-    {% include topbar.html lang=lang %}
 
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
+        {% include topbar.html lang=lang %}
+
         <div class="row flex-grow-1">
-          <main class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
 
 <!-- Q.js Stylesheets -->
 <link rel="stylesheet" href="{{ '/assets/css/qjs/Q.css' | relative_url }}">
@@ -233,33 +239,75 @@
 </style>
 
 <div class="qc-playground">
-  <!-- Compact Sample Circuits -->
+  <!-- Comprehensive Sample Circuits -->
   <div class="sample-circuits-compact">
-    <h4><i class="fas fa-lightbulb me-2"></i>Quick Start - Sample Circuits</h4>
-    <p class="mb-3">Click any circuit to load it instantly:</p>
+    <h4><i class="fas fa-lightbulb me-2"></i>Sample Quantum Circuits</h4>
+    <p class="mb-3">Click any circuit to load it instantly and explore quantum algorithms:</p>
     
-    <h5>Basic</h5>
+    <h5>Fundamentals</h5>
     <div class="circuits-row">
-      <span class="circuit-pill" onclick="loadSampleCircuit('superposition')">Superposition</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('bell')">Bell State</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('bellModified')">Bell + X</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('superposition')" title="Create equal superposition |0⟩+|1⟩">Superposition</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('pauliX')" title="Pauli-X gate (quantum NOT)">Pauli X</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('pauliY')" title="Pauli-Y gate">Pauli Y</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('pauliZ')" title="Pauli-Z gate (phase flip)">Pauli Z</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('phaseGate')" title="Phase gate">Phase P</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('tGate')" title="T gate (π/8 rotation)">T Gate</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('sGate')" title="S gate (π/4 rotation)">S Gate</span>
     </div>
     
-    <h5>Intermediate</h5>
+    <h5>Bell States & Entanglement</h5>
     <div class="circuits-row">
-      <span class="circuit-pill" onclick="loadSampleCircuit('deutsch')">Deutsch Algorithm</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('toffoli')">Toffoli Gate</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('ghz')">GHZ State</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('swapTest')">Swap Test</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('bellPhiPlus')" title="Bell state |Φ+⟩ = (|00⟩+|11⟩)/√2">|Φ+⟩ Bell</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('bellPhiMinus')" title="Bell state |Φ-⟩ = (|00⟩-|11⟩)/√2">|Φ-⟩ Bell</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('bellPsiPlus')" title="Bell state |Ψ+⟩ = (|01⟩+|10⟩)/√2">|Ψ+⟩ Bell</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('bellPsiMinus')" title="Bell state |Ψ-⟩ = (|01⟩-|10⟩)/√2">|Ψ-⟩ Bell</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('ghz3')" title="3-qubit GHZ state (|000⟩+|111⟩)/√2">GHZ State</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('w3')" title="3-qubit W state (|001⟩+|010⟩+|100⟩)/√3">W State</span>
     </div>
     
-    <h5>Advanced</h5>
+    <h5>Multi-Qubit Gates</h5>
     <div class="circuits-row">
-      <span class="circuit-pill" onclick="loadSampleCircuit('qft2')">2-Qubit QFT</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('teleportation')">Teleportation</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('grover2')">Grover Search</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('phaseKickback')">Phase Kickback</span>
-      <span class="circuit-pill" onclick="loadSampleCircuit('catState')">Cat State</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('cnot')" title="Controlled-NOT (CNOT) gate">CNOT</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('ccnot')" title="Controlled-Controlled-NOT (Toffoli) gate">Toffoli</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('fredkinGate')" title="Controlled-SWAP (Fredkin) gate">Fredkin</span>
+    </div>
+    
+    <h5>Quantum Algorithms</h5>
+    <div class="circuits-row">
+      <span class="circuit-pill" onclick="loadSampleCircuit('deutsch')" title="Deutsch algorithm for function evaluation">Deutsch</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('deutschJozsa')" title="Deutsch-Jozsa algorithm">Deutsch-Jozsa</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('bernsteinVazirani')" title="Bernstein-Vazirani hidden string algorithm">Bernstein-Vazirani</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('grover2')" title="Grover's search algorithm (2-qubit)">Grover Search</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('amplitudeAmplification')" title="Amplitude amplification technique">Amplitude Amplification</span>
+    </div>
+    
+    <h5>Quantum Fourier Transform</h5>
+    <div class="circuits-row">
+      <span class="circuit-pill" onclick="loadSampleCircuit('qft2')" title="2-qubit Quantum Fourier Transform">2-Qubit QFT</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('qft3')" title="3-qubit Quantum Fourier Transform">3-Qubit QFT</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('phaseEstimation')" title="Quantum Phase Estimation">Phase Estimation</span>
+    </div>
+    
+    <h5>Error Correction</h5>
+    <div class="circuits-row">
+      <span class="circuit-pill" onclick="loadSampleCircuit('bitFlipCode')" title="3-qubit bit flip error correction">Bit Flip Code</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('phaseFlipCode')" title="3-qubit phase flip error correction">Phase Flip Code</span>
+    </div>
+    
+    <h5>Quantum Communication</h5>
+    <div class="circuits-row">
+      <span class="circuit-pill" onclick="loadSampleCircuit('teleportation')" title="Quantum teleportation protocol">Teleportation</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('denseCoding')" title="Dense coding protocol">Dense Coding</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('swapTest')" title="SWAP test for state comparison">SWAP Test</span>
+    </div>
+    
+    <h5>Applications</h5>
+    <div class="circuits-row">
+      <span class="circuit-pill" onclick="loadSampleCircuit('randomNumber')" title="Quantum random number generator">Random Numbers</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('coinFlip')" title="Quantum coin flip">Coin Flip</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('catState4')" title="4-qubit cat state">Cat State</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('phaseKickback')" title="Phase kickback demonstration">Phase Kickback</span>
+      <span class="circuit-pill" onclick="loadSampleCircuit('quantumWalk')" title="Quantum walk example">Quantum Walk</span>
     </div>
   </div>
 
@@ -326,42 +374,106 @@ I-I-I---I---I-I</textarea>
 let currentCircuit = null;
 let playgroundInputText = '';
 
-// Sample circuits data organized by difficulty
+// Sample circuits organized by category and educational value
 const sampleCircuits = {
-  // Basic Circuits
+  // Fundamentals
   superposition: `H`,
-  bell: `H-X#0
+  pauliX: `X`,
+  pauliY: `Y`,
+  pauliZ: `Z`,
+  phaseGate: `P`,
+  tGate: `T`,
+  sGate: `S`,
+  
+  // Bell States (Entanglement)
+  bellPhiPlus: `H-X#0
 I-X#1`,
-  bellModified: `H-X#0-X
+  bellPhiMinus: `H-X#0-Z
+I-X#1-I`,
+  bellPsiPlus: `H-X#0-I
+I-X#1-X`,
+  bellPsiMinus: `H-X#0-Z
 I-X#1-X`,
   
-  // Intermediate Circuits
-  deutsch: `H-I-H-I
-H-X-I-H`,
-  toffoli: `I-I-X#2
-I-I-X#2
-X-X-X#2`,
-  ghz: `H-X#1-X#2
+  // Basic Algorithms
+  deutsch: `H-H-I-H-I
+I-H-X-H-I`,
+  deutschJozsa: `H-H-H-I-I-H-H-H
+I-I-H-X-I-I-I-H`,
+  bernsteinVazirani: `H-H-H-I-I-H-H-H
+I-I-H-Z-I-I-I-H`,
+  
+  // Multi-Qubit Gates
+  cnot: `H-X#0
+I-X#1`,
+  ccnot: `H-I-X#2
+I-H-X#2
+I-I-X#2`,
+  fredkinGate: `H-I-S#2
+I-H-S#2
+I-I-S#2`,
+  
+  // Entangled States
+  ghz3: `H-X#1-X#2
 I-X#1-I
 I-I---X#2`,
-  swapTest: `H-I---I-H
-I-X#2-X-I
-I-X#2-I-I`,
+  w3: `H-X#1-I
+I-I---H
+I-I---X#0`,
   
-  // Advanced Circuits
-  qft2: `I-H-S#1-H
-H-I-I---I`,
-  teleportation: `I---I-H-I-X#1-Z#2
-I---I-I-I-I---I
+  // Quantum Fourier Transform
+  qft2: `I-H-S#1-H-S#0
+H-I-I---I-I`,
+  qft3: `I-I-H-S#2-T#2-H-S#1-H
+I-H-I-I---I---I-I---I
+H-I-I-I---I---I-I---I`,
+  
+  // Search Algorithms
+  grover2: `H-H-X-X-H-Z#1-H-X-X-H-H
+H-H-X-X-H-Z#0-H-X-X-H-H`,
+  amplitudeAmplification: `H-H-I-X-H-Z#1-H-X-I-H-H
+H-H-X-I-H-Z#0-H-I-X-H-H`,
+  
+  // Error Correction
+  bitFlipCode: `I-X#1-X#2-I-I-I
+H-X#1-I---I-I-I
+I-I---X#2-I-I-I`,
+  phaseFlipCode: `H-X#1-X#2-H-H-H
+I-X#1-I---I-I-I
+I-I---X#2-I-I-I`,
+  
+  // Applications
+  teleportation: `I-I-H-I-X#0-Z#0
+I-I-I-I-I---I
 H-X#0-I-H-I---I`,
-  grover2: `H-X-H-X-H
-H-X-H-X-H`,
+  denseCoding: `H-X#0-I-I-H-I
+I-X#1-H-X-I-X`,
+  randomNumber: `H-I-I-I
+H-I-I-I
+H-I-I-I
+H-I-I-I`,
+  coinFlip: `H-I
+I-I`,
+  
+  // Advanced Protocols
+  swapTest: `H-I---I-H
+I-S#2-S-I
+I-S#2-I-I`,
   phaseKickback: `H-I-I-Z#0-I-H
 I-H-Z-Z#0-H-I`,
-  catState: `H-X#1-X#2-X#3
+  quantumWalk: `H-I-S-H-S-H
+I-S-I-I-I-I`,
+  
+  // Cat States
+  catState4: `H-X#1-X#2-X#3
 I-X#1-I---I
 I-I---X#2-I
-I-I---I---X#3`
+I-I---I---X#3`,
+  
+  // Phase Estimation
+  phaseEstimation: `H-I-I-P#2-H
+I-H-I-I---I
+I-I-H-I---I`
 };
 
 // Load a sample circuit into the editor
@@ -577,17 +689,41 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-            </main>
+          </main>
+
+          <!-- panel -->
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+            <div class="access">
+              {% include_cached update-list.html lang=lang %}
+              {% include_cached trending-tags.html lang=lang %}
+            </div>
+          </aside>
+        </div>
+
+        <div class="row">
+          <!-- tail -->
+          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            {% include_cached footer.html lang=lang %}
           </div>
         </div>
+
+        {% include_cached search-results.html lang=lang %}
       </div>
 
-    {% include footer.html lang=lang %}
+      <aside aria-label="Scroll to Top">
+        <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </aside>
+    </div>
 
-    <div id="mask"></div>
+    <div id="mask" class="d-none position-fixed w-100 h-100 z-1"></div>
 
-    {% include search-results.html lang=lang %}
-    {% include js-selector.html %}
+    {% if site.pwa.enabled %}
+      {% include_cached notification.html lang=lang %}
+    {% endif %}
 
+    {% include_cached search-loader.html lang=lang %}
   </body>
 </html>
+
