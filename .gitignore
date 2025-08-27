@@ -22,6 +22,30 @@ package-lock.json
 !.vscode/extensions.json
 !.vscode/tasks.json
 
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+*.bak
+
+# Environment and local config
+.env
+.env.local
+CLAUDE.local.md
+
+# Logs and temporary files
+*.log
+*.tmp
+
 # Misc
 _sass/vendors
 assets/js/dist
