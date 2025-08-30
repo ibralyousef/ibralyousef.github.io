@@ -21,6 +21,6 @@ abstract: |
 
 {{ page.abstract }}
 
-## Discussion Notes
+## Presentation Slides
 
-*Notes from the discussion will be added after the session.*
+[Download Presentation (PDF)](/assets/presentations/gap-engineering-qubits.pdf)
