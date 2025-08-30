@@ -38,6 +38,13 @@ layout: page
     <div
       id="{{ HEAD_PREFIX }}{{ group_index }}"
       class="card-header d-flex justify-content-between hide-border-bottom"
+      {% if courses_count > 0 %}
+        data-bs-toggle="collapse"
+        data-bs-target="#{{ LIST_PREFIX }}{{ group_index }}"
+        aria-expanded="true"
+        aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
+        style="cursor: pointer;"
+      {% endif %}
     >
       <span class="ms-2">
         <i class="far fa-folder{% if courses_count > 0 %}-open{% endif %} fa-fw"></i>
@@ -59,17 +66,11 @@ layout: page
 
       <!-- Collapse Arrow -->
       {% if courses_count > 0 %}
-        <a
-          href="#{{ LIST_PREFIX }}{{ group_index }}"
-          data-bs-toggle="collapse"
-          aria-expanded="true"
-          aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
-          class="category-trigger hide-border-bottom"
-        >
+        <span class="category-trigger hide-border-bottom">
           <i class="fas fa-fw fa-angle-down"></i>
-        </a>
+        </span>
       {% else %}
-        <span data-bs-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+        <span class="category-trigger hide-border-bottom disabled">
           <i class="fas fa-fw fa-angle-right"></i>
         </span>
       {% endif %}
@@ -221,6 +222,14 @@ layout: page
   line-height: 1.4;
 }
 
+/* Make the entire header clickable */
+.card-header[data-bs-toggle="collapse"]:hover {
+  background-color: var(--card-hover-bg, rgba(0, 0, 0, 0.02));
+}
+
+[data-bs-theme="dark"] .card-header[data-bs-toggle="collapse"]:hover {
+  background-color: var(--card-hover-bg, rgba(255, 255, 255, 0.02));
+}
 
 /* Base badge styles */
 .badge {

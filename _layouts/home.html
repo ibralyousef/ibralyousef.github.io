@@ -5,6 +5,11 @@ refactor: true
 
 {% include lang.html %}
 
+<!-- Home Page Header -->
+<div class="home-header text-center mb-5">
+  <h1 class="home-title">𝙸𝚋𝚛𝚊𝚑𝚎𝚎𝚖's Blog</h1>
+</div>
+
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
@@ -119,3 +124,19 @@ refactor: true
 {% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
 {% endif %}
+
+<style>
+.home-header {
+  padding: 2rem 0 1rem 0;
+}
+.home-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--heading-color, inherit);
+}
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem;
+  }
+}
+</style>

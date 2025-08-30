@@ -6,14 +6,14 @@ slug: chem313
 credits: 3-0-3
 level: 300
 description: Introduction to computational methods in chemistry including quantum mechanics, molecular modeling, and computational tools.
-prerequisites: CHEM 201, PHYS 102
+prerequisites: CHEM 311
 semester_offered: F
 course_type: Elective
 ---
 
 Introduction to computational methods in chemistry including quantum mechanics, molecular modeling, and computational tools.
 
-**Prerequisites:** CHEM 201, PHYS 102
+**Prerequisites:** CHEM 311
 
 ## <i class="fas fa-book"></i> Course Resources
 

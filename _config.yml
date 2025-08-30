@@ -175,6 +175,9 @@ collections:
   umq_events:
     output: true
     permalink: /umq-events/:name/
+  pages:
+    output: true
+    permalink: /:path/
 
 defaults:
   - scope:
