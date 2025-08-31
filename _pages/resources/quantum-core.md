@@ -11,17 +11,17 @@ Essential texts and references for quantum computing, from foundational concepts
 ## Foundational Text (Beginner to Intermediate)
 
 **[Quantum Computation and Quantum Information](/assets/resources/nielsen-chuang-quantum-computation.pdf)** by Michael Nielsen & Isaac Chuang  
-Often referred to as "Mike and Ike," this is the standard textbook in quantum information science. With over 58,000 citations, it provides a comprehensive introduction assuming minimal prior knowledge of quantum mechanics or computer science. Covers fundamental topics including quantum circuits, quantum algorithms (Fourier transform, search), quantum noise, error correction, and information theory. Essential for building a strong theoretical foundation.
+*The "Bible of Quantum Computing"* - The standard textbook that explains quantum computing from the ground up. It doesn't assume you already know quantum mechanics, making complex ideas accessible through clear explanations and examples. Covers all the essential topics: quantum gates, major algorithms, error correction, and information theory.
 
 ## Hardware and Implementation (Intermediate to Advanced)
 
 **[A Quantum Engineer's Guide to Superconducting Qubits](/assets/resources/quantum-engineers-guide-superconducting-qubits.pdf)** by Krantz et al. (2019)  
-An introductory guide bridging fundamental concepts with contemporary applications in quantum computing. Reviews 20 years of evolution from basic research to engineering large-scale quantum systems. Covers superconducting circuit design, qubit control, readout techniques, noise properties, and circuit quantum electrodynamics (cQED). Ideal for understanding the hardware implementation of quantum computers.
+Focuses on the practical engineering needed to build working quantum computers. Goes beyond theory to address real challenges: how to fabricate qubits, control them with electronics, keep them cold enough, and scale up to more qubits. Shows what actually works in the lab versus what looks good on paper.
 
 **[Introduction to Experimental Quantum Measurement with Superconducting Qubits](/assets/resources/experimental-quantum-measurement-superconducting-qubits.pdf)** by Mahdi Naghiloo (2019)  
-A pedagogical introduction to quantum measurement in superconducting systems, exploring the dynamics of single qubits under continuous monitoring. Covers experimental quantum dynamics, quantum thermodynamics, and weak measurement techniques. Provides an in-depth experimental perspective essential for those working with physical quantum systems.
+A pedagogical introduction to quantum measurement in superconducting systems, exploring the dynamics of single qubits under continuous monitoring. Covers experimental quantum dynamics, quantum thermodynamics, and weak measurement techniques. Provides an in-depth experimental perspective essential for those working with physical quantum systems. The first few chapters are very user-friendly.
 
 ## Practical Applications (Advanced)
 
 **[Practical Introduction to Benchmarking and Characterization of Quantum Computers](/assets/resources/benchmarking-characterization-quantum-computers.pdf)** by Hashim et al. (2025)  
-A comprehensive tutorial on quantum characterization, verification, and validation (QCVV) tools. Designed for both newcomers and experts, it provides essential techniques to evaluate and enhance quantum computing performance. Critical for understanding how to assess the quality and reliability of quantum computations in practice.
+The most current guide to testing whether quantum computers work correctly. Covers all the (Quantum Characterization, Verification, and Validation) QCVV protocols needed to measure performance: gate quality, error rates, and algorithm success. Essential for determining if your quantum computer produces reliable results or just noise.

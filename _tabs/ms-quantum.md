@@ -22,4 +22,4 @@ Foundational resources for Term 1 students covering both ICS 560 and PHYS 512:
 
 ## Recommended Resources
 
-For comprehensive quantum computing resources including foundational texts, hardware implementation guides, and practical applications, visit our [**Quantum Computing Core Resources**](/resources/quantum-core/) page.
+For comprehensive quantum computing resources including foundational texts, hardware implementation guides, and practical applications, check: [**Quantum Computing Core Resources**](/resources/quantum-core/).
