@@ -31,8 +31,8 @@ abstract: |
 
 ## Presentation Slides
 
-[Download Presentation (PowerPoint)](/assets/presentations/coplanar-waveguide-presentation.pptx)
+[Download Presentation (PDF)](/assets/presentations/coplanar-waveguide-presentation.pdf)
 
 ## Recommended Resources
 
-For comprehensive quantum computing resources including foundational texts, hardware implementation guides, and practical applications, visit our [**Quantum Computing Core Resources**](/resources/quantum-core/) page.
+For comprehensive quantum computing resources including foundational texts, hardware implementation guides, and practical applications, check: [**Quantum Computing Core Resources**](/resources/quantum-core/).
