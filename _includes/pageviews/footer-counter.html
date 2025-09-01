@@ -11,45 +11,27 @@
       // Fetch page-specific views
       const pageUrl = `https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/${encodeURIComponent(uri)}.json`;
       
-      console.log('Fetching page views from:', pageUrl);
-      
       fetch(pageUrl)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          return response.json();
-        })
+        .then((response) => response.json())
         .then((data) => {
-          console.log('Page view data:', data);
-          const count = data.count ? data.count.replace(/\D/g, '') : '0';
-          footerPv.innerText = count ? new Intl.NumberFormat().format(count) : '0';
+          const count = data.count.replace(/\D/g, '');
+          footerPv.innerText = new Intl.NumberFormat().format(count);
         })
         .catch((error) => {
-          console.error('Error fetching page views:', error);
-          footerPv.innerText = '0';
+          footerPv.innerText = '1';
         });
       
       // Fetch total site views
       const totalUrl = `https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/TOTAL.json`;
       
-      console.log('Fetching total views from:', totalUrl);
-      
       fetch(totalUrl)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          return response.json();
-        })
+        .then((response) => response.json())
         .then((data) => {
-          console.log('Total view data:', data);
-          const count = data.count ? data.count.replace(/\D/g, '') : '0';
-          footerTotal.innerText = count ? new Intl.NumberFormat().format(count) : '0';
+          const count = data.count.replace(/\D/g, '');
+          footerTotal.innerText = new Intl.NumberFormat().format(count);
         })
         .catch((error) => {
-          console.error('Error fetching total views:', error);
-          footerTotal.innerText = '0';
+          footerTotal.innerText = '1';
         });
     }
   });

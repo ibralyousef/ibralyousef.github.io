@@ -30,14 +30,72 @@
 
   <!-- Page views counter -->
   {% if site.pageviews.provider and site.analytics[site.pageviews.provider].id %}
-    <p class="pageviews-display">
-      Page Views (<span id="footer-pageviews">
-        <i class="fas fa-spinner fa-spin small"></i>
-      </span>), 
-      Total Views (<span id="footer-totalviews">
-        <i class="fas fa-spinner fa-spin small"></i>
-      </span>)
+    <p class="pageviews-display text-muted small">
+      <i class="fas fa-eye fa-fw"></i>
+      <span id="footer-pageviews">
+        <i class="fas fa-spinner fa-spin"></i>
+      </span> / 
+      <span id="footer-totalviews">
+        <i class="fas fa-spinner fa-spin"></i>
+      </span>
+      (<span id="footer-percentage">
+        <i class="fas fa-spinner fa-spin"></i>
+      </span>%)
     </p>
+    
+    <!-- Include the pageview counter script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const pv = document.getElementById('footer-pageviews');
+        const totalPv = document.getElementById('footer-totalviews');
+        const percentPv = document.getElementById('footer-percentage');
+        
+        let pageCount = 0;
+        let totalCount = 0;
+
+        if (pv !== null) {
+          const uri = location.pathname.replace(/\/$/, '');
+          const url = `https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/${encodeURIComponent(uri)}.json`;
+
+          fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+              pageCount = parseInt(data.count.replace(/\D/g, '')) || 1;
+              pv.innerText = new Intl.NumberFormat().format(pageCount);
+              updatePercentage();
+            })
+            .catch((error) => {
+              pageCount = 1;
+              pv.innerText = '1';
+              updatePercentage();
+            });
+        }
+
+        if (totalPv !== null) {
+          const totalUrl = `https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/TOTAL.json`;
+
+          fetch(totalUrl)
+            .then((response) => response.json())
+            .then((data) => {
+              totalCount = parseInt(data.count.replace(/\D/g, '')) || 1;
+              totalPv.innerText = new Intl.NumberFormat().format(totalCount);
+              updatePercentage();
+            })
+            .catch((error) => {
+              totalCount = 1;
+              totalPv.innerText = '1';
+              updatePercentage();
+            });
+        }
+        
+        function updatePercentage() {
+          if (pageCount > 0 && totalCount > 0 && percentPv !== null) {
+            const percentage = ((pageCount / totalCount) * 100).toFixed(2);
+            percentPv.innerText = percentage;
+          }
+        }
+      });
+    </script>
   {% endif %}
 
   <p>
