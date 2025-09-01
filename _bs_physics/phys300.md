@@ -53,6 +53,13 @@ Newton's laws of motion and conservation theorems, Forced damped Oscillations; C
 </details>
 
 <details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
 <summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys300/ForierSeries.nb">Fourier Series (Mathematica)</a></li>

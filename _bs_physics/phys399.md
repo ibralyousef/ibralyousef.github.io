@@ -18,12 +18,53 @@ Practical training in physics research or industrial applications during summer 
 ## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong><i class="fas fa-clipboard-list"></i> Training Materials</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
-<li><a href="/assets/resources/core/phys399/Final Presentation.pdf">Final Presentation</a></li>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
+<ul>
 <li><a href="/assets/resources/core/phys399/X-RayAssignment1.pdf">X-Ray Assignment 1</a></li>
 <li><a href="/assets/resources/core/phys399/X-RayAssignment2.pdf">X-Ray Assignment 2</a></li>
 <li><a href="/assets/resources/core/phys399/X-RayAssignment3.pdf">X-Ray Assignment 3</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-clipboard-list"></i> Training Materials</strong></summary>
+<ul>
+<li><a href="/assets/resources/core/phys399/Final Presentation.pdf">Final Presentation</a></li>
 </ul>
 </details>
 

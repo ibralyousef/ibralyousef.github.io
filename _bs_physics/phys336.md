@@ -27,7 +27,7 @@ Introduction to semiconductor physics and electronic devices including p-n junct
 </details>
 
 <details>
-<summary><strong><i class="fas fa-clipboard-list"></i> Homework Assignments</strong></summary>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys336/336HW1.pdf">Homework 1</a></li>
 <li><a href="/assets/resources/electives/phys336/336HW2.pdf">Homework 2</a></li>
@@ -38,7 +38,14 @@ Introduction to semiconductor physics and electronic devices including p-n junct
 </details>
 
 <details>
-<summary><strong><i class="fas fa-chart-bar"></i> Quizzes & Exams</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys336/336Q2.pdf">Quiz 2</a></li>
 <li><a href="/assets/resources/electives/phys336/336Q3.pdf">Quiz 3</a></li>
@@ -46,11 +53,18 @@ Introduction to semiconductor physics and electronic devices including p-n junct
 </details>
 
 <details>
-<summary><strong><i class="fas fa-book-open"></i> References & Materials</strong></summary>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys336/336FormulaSheet.pdf">Formula Sheet 1</a></li>
 <li><a href="/assets/resources/electives/phys336/336FormulaSheet2.pdf">Formula Sheet 2</a></li>
 <li><a href="/assets/resources/electives/phys336/336Seminar.pdf">Seminar Material</a></li>
 <li><a href="/assets/resources/electives/phys336/Ultra Wide Band Gap Semiconductors.pdf">Ultra Wide Band Gap Semiconductors</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li>No materials available yet</li>
 </ul>
 </details>

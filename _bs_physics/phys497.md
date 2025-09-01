@@ -18,18 +18,52 @@ Independent research project under faculty supervision on topics in theoretical 
 ## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong><i class="fas fa-clipboard-list"></i> Research Materials</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
 <ul>
-<li><a href="/assets/resources/electives/phys497/497All.pdf">Complete Research Collection</a></li>
+<li><a href="/assets/resources/electives/phys497/Kitaev Honeycomb Model.pdf">Kitaev Honeycomb Model</a></li>
+<li><a href="/assets/resources/electives/phys497/Summary of the Ising Model.pdf">Summary of the Ising Model</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
+<ul>
 <li><a href="/assets/resources/electives/phys497/497HW1.pdf">Research Assignment 1</a></li>
 <li><a href="/assets/resources/electives/phys497/497Hw2.pdf">Research Assignment 2</a></li>
 </ul>
 </details>
 
 <details>
-<summary><strong><i class="fas fa-chart-bar"></i> Research Topics</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
 <ul>
-<li><a href="/assets/resources/electives/phys497/Kitaev Honeycomb Model.pdf">Kitaev Honeycomb Model</a></li>
-<li><a href="/assets/resources/electives/phys497/Summary of the Ising Model.pdf">Summary of the Ising Model</a></li>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-clipboard-list"></i> Research Materials</strong></summary>
+<ul>
+<li><a href="/assets/resources/electives/phys497/497All.pdf">Complete Research Collection</a></li>
 </ul>
 </details>

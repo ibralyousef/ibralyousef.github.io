@@ -54,6 +54,14 @@ Fundamentals of non-relativistic quantum mechanics. Mathematical tools and basic
 </details>
 
 <details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
+<ul>
+<li><a href="/assets/resources/core/phys310/FermiSummary.pdf">Fermi Summary</a></li>
+<li><a href="/assets/resources/core/phys310/OrbitalQuantumNumber.pdf">Orbital Quantum Numbers</a></li>
+</ul>
+</details>
+
+<details>
 <summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys310/CombDeltaPotential.nb">Comb Delta Potential (Mathematica)</a></li>
@@ -63,10 +71,3 @@ Fundamentals of non-relativistic quantum mechanics. Mathematical tools and basic
 </ul>
 </details>
 
-<details>
-<summary><strong><i class="fas fa-book-open"></i> Course Materials</strong></summary>
-<ul>
-<li><a href="/assets/resources/core/phys310/FermiSummary.pdf">Fermi Summary</a></li>
-<li><a href="/assets/resources/core/phys310/OrbitalQuantumNumber.pdf">Orbital Quantum Numbers</a></li>
-</ul>
-</details>

@@ -25,7 +25,7 @@ Electronic devices, semiconductor physics, diodes, transistors, amplifiers, digi
 </details>
 
 <details>
-<summary><strong><i class="fas fa-file-alt"></i> Homework & Solutions</strong></summary>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys308/homework/Homework 1 (solution).docx">Homework 1 - Solution</a></li>
 <li><a href="/assets/resources/core/phys308/homework/Homework 2 (solution) (1).docx">Homework 2 - Solution</a></li>
@@ -38,5 +38,26 @@ Electronic devices, semiconductor physics, diodes, transistors, amplifiers, digi
 <li><a href="/assets/resources/core/phys308/exams/First Major Exam (solution) (1).docx">First Major Exam - Solution</a></li>
 <li><a href="/assets/resources/core/phys308/exams/Second Major Exam (solution).docx">Second Major Exam - Solution</a></li>
 <li><a href="/assets/resources/core/phys308/exams/Final Exam (solution) (2).docx">Final Exam - Solution</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li>No materials available yet</li>
 </ul>
 </details>

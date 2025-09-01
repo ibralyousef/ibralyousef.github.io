@@ -68,3 +68,10 @@ Electrostatics, electric fields, Gauss's law, electric potential, capacitors, di
 <li><a href="/assets/resources/core/phys305/notes/PHYS305 Lec Notes CH6.pdf">Chapter 6 - Lecture Notes</a></li>
 </ul>
 </details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>

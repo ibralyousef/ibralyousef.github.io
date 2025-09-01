@@ -39,6 +39,20 @@ Magnetostatics, magnetic fields, Faraday's law, electromagnetic induction, Maxwe
 </details>
 
 <details>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
 <summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys306/notes/PHYS305-Ch07-Lec Notes-MBH.pdf">Chapter 7 - Lecture Notes</a></li>
@@ -47,5 +61,12 @@ Magnetostatics, magnetic fields, Faraday's law, electromagnetic induction, Maxwe
 <li><a href="/assets/resources/core/phys306/notes/PHYS306-Ch10-Lec Notes-MBH.pdf">Chapter 10 - Lecture Notes</a></li>
 <li><a href="/assets/resources/core/phys306/notes/PHYS306-Ch11-Lec Notes-MBH.pdf">Chapter 11 - Lecture Notes</a></li>
 <li><a href="/assets/resources/core/phys306/notes/PHYS306-Ch12-Lec Notes-MBH.pdf">Chapter 12 - Lecture Notes</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li>No materials available yet</li>
 </ul>
 </details>

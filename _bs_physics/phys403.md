@@ -18,25 +18,54 @@ Advanced laboratory experiments in modern physics including atomic, nuclear, and
 ## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong><i class="fas fa-flask"></i> Lab Experiments</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-flask"></i> Lab Materials</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys403/ESR403.pdf">Electron Spin Resonance (ESR)</a></li>
 <li><a href="/assets/resources/core/phys403/LDS403.pdf">Laser Diode Spectroscopy (LDS)</a></li>
 <li><a href="/assets/resources/core/phys403/NMR403.pdf">Nuclear Magnetic Resonance (NMR)</a></li>
 <li><a href="/assets/resources/core/phys403/XRD403.pdf">X-Ray Diffraction (XRD)</a></li>
-</ul>
-</details>
-
-<details>
-<summary><strong><i class="fas fa-chart-bar"></i> Projects</strong></summary>
-<ul>
-<li><a href="/assets/resources/core/phys403/Project403.pdf">Senior Lab Project</a></li>
-</ul>
-</details>
-
-<details>
-<summary><strong><i class="fas fa-microscope"></i> Detailed Experiment Guides</strong></summary>
-<ul>
 <li><strong>ESR (Electron Spin Resonance):</strong>
   <ul>
     <li><a href="/assets/resources/core/phys403/ESR/ESR.pdf">ESR Experiment Guide</a></li>
@@ -64,5 +93,12 @@ Advanced laboratory experiments in modern physics including atomic, nuclear, and
     <li><a href="/assets/resources/core/phys403/XRD/Phys.403_Tamplet.pdf">PHYS 403 XRD Template</a></li>
   </ul>
 </li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-clipboard-list"></i> Projects</strong></summary>
+<ul>
+<li><a href="/assets/resources/core/phys403/Project403.pdf">Senior Lab Project</a></li>
 </ul>
 </details>

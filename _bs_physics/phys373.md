@@ -25,46 +25,11 @@ Numerical methods and computer simulations in physics problems.
 <li><a href="/assets/resources/electives/phys373/textbooks/numerical_analysis_9th.pdf">Numerical Analysis (9th Edition)</a></li>
 <li><a href="/assets/resources/electives/phys373/textbooks/Syllabus.pdf">Course Syllabus</a></li>
 <li><a href="/assets/resources/electives/phys373/textbooks/course outlines.pdf">Course Outlines</a></li>
-<li><a href="/assets/resources/electives/phys373/textbooks/Final_Formula_Sh.pdf">Final Formula Sheet</a></li>
 </ul>
 </details>
 
 <details>
-<summary><strong><i class="fas fa-flask"></i> Lab Materials</strong></summary>
-<ul>
-<li><a href="/assets/resources/electives/phys373/Lab01.ipynb" download>Lab 01</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab02.ipynb" download>Lab 02</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab03.ipynb" download>Lab 03</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab04.ipynb" download>Lab 04</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab05.ipynb" download>Lab 05</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab06.ipynb" download>Lab 06</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab07.ipynb" download>Lab 07</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab08.ipynb" download>Lab 08</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab09.ipynb" download>Lab 09</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab10.ipynb" download>Lab 10</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab11.ipynb" download>Lab 11</a></li>
-<li><a href="/assets/resources/electives/phys373/Lab12.ipynb" download>Lab 12</a></li>
-</ul>
-</details>
-
-<details>
-<summary><strong><i class="fas fa-chart-bar"></i> Quizzes & Exams</strong></summary>
-<ul>
-<li><a href="/assets/resources/electives/phys373/Quiz04.ipynb" download>Quiz 04</a></li>
-<li><a href="/assets/resources/electives/phys373/373FormulaSheet.pdf">Formula Sheet</a></li>
-</ul>
-</details>
-
-<details>
-<summary><strong><i class="fas fa-clipboard-list"></i> Projects</strong></summary>
-<ul>
-<li><a href="/assets/resources/electives/phys373/Monte Carlo Simulation of Radiation Transport (Gamma Rays).pdf">Monte Carlo Simulation Project</a></li>
-<li><a href="/assets/resources/electives/phys373/Project Presentation.pdf">Project Presentation</a></li>
-</ul>
-</details>
-
-<details>
-<summary><strong><i class="fas fa-book-open"></i> Lab Assignments</strong></summary>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys373/labs/Introduction to python - Intro Computational Physics.pdf">Introduction to Python</a></li>
 <li><a href="/assets/resources/electives/phys373/labs/Labs-1.pdf">Lab Assignment 1</a></li>
@@ -82,11 +47,60 @@ Numerical methods and computer simulations in physics problems.
 </details>
 
 <details>
-<summary><strong><i class="fas fa-check-circle"></i> Additional Quizzes</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
+<ul>
+<li><a href="/assets/resources/electives/phys373/373FormulaSheet.pdf">Formula Sheet</a></li>
+<li><a href="/assets/resources/electives/phys373/textbooks/Final_Formula_Sh.pdf">Final Formula Sheet</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys373/quizzes/PHYS-373-Quiz1-T222.pdf">Quiz 1</a></li>
 <li><a href="/assets/resources/electives/phys373/quizzes/PHYS-373-Quiz-02-T222.pdf">Quiz 2</a></li>
 <li><a href="/assets/resources/electives/phys373/quizzes/PHYS-373-Quiz-03-T222.pdf">Quiz 3</a></li>
 <li><a href="/assets/resources/electives/phys373/quizzes/Quiz 4.pdf">Quiz 4</a></li>
+<li><a href="/assets/resources/electives/phys373/Quiz04.ipynb" download>Quiz 04 (Notebook)</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li><a href="/assets/resources/electives/phys373/Lab01.ipynb" download>Lab 01</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab02.ipynb" download>Lab 02</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab03.ipynb" download>Lab 03</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab04.ipynb" download>Lab 04</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab05.ipynb" download>Lab 05</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab06.ipynb" download>Lab 06</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab07.ipynb" download>Lab 07</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab08.ipynb" download>Lab 08</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab09.ipynb" download>Lab 09</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab10.ipynb" download>Lab 10</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab11.ipynb" download>Lab 11</a></li>
+<li><a href="/assets/resources/electives/phys373/Lab12.ipynb" download>Lab 12</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-flask"></i> Lab Materials</strong></summary>
+<ul>
+<li>See Computational Materials section for lab notebooks</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-clipboard-list"></i> Projects</strong></summary>
+<ul>
+<li><a href="/assets/resources/electives/phys373/Monte Carlo Simulation of Radiation Transport (Gamma Rays).pdf">Monte Carlo Simulation Project</a></li>
+<li><a href="/assets/resources/electives/phys373/Project Presentation.pdf">Project Presentation</a></li>
 </ul>
 </details>

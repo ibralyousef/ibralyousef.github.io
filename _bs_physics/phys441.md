@@ -27,17 +27,7 @@ Elementary particle physics including the Standard Model, particle interactions,
 </details>
 
 <details>
-<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
-<ul>
-<li><a href="/assets/resources/electives/phys441/exams/PHYS 441-211 Major Exam-1 Solutions.docx">Major Exam 1 - Solutions</a></li>
-<li><a href="/assets/resources/electives/phys441/exams/PHYS 441-221 Major Exam-2 Solutions.docx">Major Exam 2 - Solutions</a></li>
-<li><a href="/assets/resources/electives/phys441/exams/PHYS 441-221 Q6 Solutions.docx">Quiz 6 - Solutions</a></li>
-<li><a href="/assets/resources/electives/phys441/exams/PHYS 441-221 Q7 Solutions.docx">Quiz 7 - Solutions</a></li>
-</ul>
-</details>
-
-<details>
-<summary><strong><i class="fas fa-clipboard-list"></i> Homework Assignments</strong></summary>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys441/441HW1.pdf">Homework 1</a></li>
 <li><a href="/assets/resources/electives/phys441/441HW2.pdf">Homework 2</a></li>
@@ -47,8 +37,31 @@ Elementary particle physics including the Standard Model, particle interactions,
 </details>
 
 <details>
-<summary><strong><i class="fas fa-book-open"></i> Course Materials</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
+<ul>
+<li><a href="/assets/resources/electives/phys441/exams/PHYS 441-211 Major Exam-1 Solutions.docx">Major Exam 1 - Solutions</a></li>
+<li><a href="/assets/resources/electives/phys441/exams/PHYS 441-221 Major Exam-2 Solutions.docx">Major Exam 2 - Solutions</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
+<ul>
+<li><a href="/assets/resources/electives/phys441/exams/PHYS 441-221 Q6 Solutions.docx">Quiz 6 - Solutions</a></li>
+<li><a href="/assets/resources/electives/phys441/exams/PHYS 441-221 Q7 Solutions.docx">Quiz 7 - Solutions</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
 <ul>
 <li><a href="/assets/resources/electives/phys441/Particle Detectors.pdf">Particle Detectors</a></li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-laptop-code"></i> Computational Materials</strong></summary>
+<ul>
+<li>No materials available yet</li>
 </ul>
 </details>

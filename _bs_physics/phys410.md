@@ -18,7 +18,14 @@ Advanced topics in quantum mechanics including perturbation theory, scattering t
 ## <i class="fas fa-book"></i> Course Resources
 
 <details open>
-<summary><strong><i class="fas fa-clipboard-list"></i> Homework Assignments</strong></summary>
+<summary><strong><i class="fas fa-book"></i> Textbooks & References</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-file-alt"></i> Homework & Assignments</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys410/homework/NHW 1.pdf">Numerical Homework 1</a></li>
 <li><a href="/assets/resources/core/phys410/homework/Numerical Homework II.docx">Numerical Homework 2</a></li>
@@ -29,7 +36,21 @@ Advanced topics in quantum mechanics including perturbation theory, scattering t
 </details>
 
 <details>
-<summary><strong><i class="fas fa-book-open"></i> Course Materials</strong></summary>
+<summary><strong><i class="fas fa-chart-bar"></i> Exams & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-check-circle"></i> Quizzes & Solutions</strong></summary>
+<ul>
+<li>No materials available yet</li>
+</ul>
+</details>
+
+<details>
+<summary><strong><i class="fas fa-book-open"></i> Lecture Notes</strong></summary>
 <ul>
 <li><a href="/assets/resources/core/phys410/Ch11_Summary.pdf">Chapter 11 Summary</a></li>
 <li><a href="/assets/resources/core/phys410/Limitations of Perturbation Theory.pdf">Limitations of Perturbation Theory</a></li>
