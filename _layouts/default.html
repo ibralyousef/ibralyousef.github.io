@@ -82,5 +82,20 @@ layout: compress
     {% endfor %}
 
     {% include_cached search-loader.html lang=lang %}
+    
+    <!-- Set dark theme as default for new visitors -->
+    <script>
+      (function() {
+        // Only run if theme toggle is enabled (no theme_mode set)
+        if (!document.documentElement.hasAttribute('data-mode')) {
+          // Check if user has a saved preference
+          if (!sessionStorage.getItem('mode')) {
+            // No saved preference, set dark as default
+            document.documentElement.setAttribute('data-mode', 'dark');
+            sessionStorage.setItem('mode', 'dark');
+          }
+        }
+      })();
+    </script>
   </body>
 </html>

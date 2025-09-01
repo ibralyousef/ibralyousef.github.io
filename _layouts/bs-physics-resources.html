@@ -47,7 +47,7 @@ layout: page
       {% endif %}
     >
       <span class="ms-2">
-        <i class="far fa-folder{% if courses_count > 0 %}-open{% endif %} fa-fw"></i>
+        <i class="fas fa-layer-group fa-fw"></i>
 
         <span class="mx-2 level-title">{{ level_title }}</span>
 
@@ -66,11 +66,11 @@ layout: page
 
       <!-- Collapse Arrow -->
       {% if courses_count > 0 %}
-        <span class="category-trigger hide-border-bottom">
+        <span class="category-trigger">
           <i class="fas fa-fw fa-angle-down"></i>
         </span>
       {% else %}
-        <span class="category-trigger hide-border-bottom disabled">
+        <span class="category-trigger disabled">
           <i class="fas fa-fw fa-angle-right"></i>
         </span>
       {% endif %}
@@ -190,7 +190,42 @@ layout: page
   </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all collapsible elements
+  const collapsibleElements = document.querySelectorAll('.collapse');
+  
+  collapsibleElements.forEach(function(element) {
+    // Get the corresponding card header
+    const targetId = element.id;
+    const header = document.querySelector(`[data-bs-target="#${targetId}"]`);
+    
+    if (header) {
+      // When collapse is hidden (collapsed state)
+      element.addEventListener('hidden.bs.collapse', function() {
+        header.classList.remove('hide-border-bottom');
+      });
+      
+      // When collapse is shown (expanded state)
+      element.addEventListener('shown.bs.collapse', function() {
+        header.classList.add('hide-border-bottom');
+      });
+      
+      // Set initial state based on whether it's expanded
+      if (!element.classList.contains('show')) {
+        header.classList.remove('hide-border-bottom');
+      }
+    }
+  });
+});
+</script>
+
 <style>
+/* Fix overflow issue for card corners */
+.card.categories {
+  overflow: hidden;
+}
+
 .level-title { 
   font-weight: normal;
   color: var(--heading-color);
@@ -222,13 +257,9 @@ layout: page
   line-height: 1.4;
 }
 
-/* Make the entire header clickable */
-.card-header[data-bs-toggle="collapse"]:hover {
-  background-color: var(--card-hover-bg, rgba(0, 0, 0, 0.02));
-}
-
-[data-bs-theme="dark"] .card-header[data-bs-toggle="collapse"]:hover {
-  background-color: var(--card-hover-bg, rgba(255, 255, 255, 0.02));
+/* Clickable headers - cursor only, no hover effects */
+.card-header[data-bs-toggle="collapse"] {
+  cursor: pointer;
 }
 
 /* Base badge styles */
