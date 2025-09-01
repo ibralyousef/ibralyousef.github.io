@@ -28,6 +28,18 @@
     {% endif %}
   </p>
 
+  <!-- Page views counter -->
+  {% if site.pageviews.provider and site.analytics[site.pageviews.provider].id %}
+    <p class="pageviews-display">
+      Page Views (<span id="footer-pageviews">
+        <i class="fas fa-spinner fa-spin small"></i>
+      </span>), 
+      Total Views (<span id="footer-totalviews">
+        <i class="fas fa-spinner fa-spin small"></i>
+      </span>)
+    </p>
+  {% endif %}
+
   <p>
     {%- capture _platform -%}
       <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
