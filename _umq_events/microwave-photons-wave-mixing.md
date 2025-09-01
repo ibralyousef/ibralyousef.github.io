@@ -26,6 +26,6 @@ abstract: |
 
 Join via Zoom: [{{ page.registration_url }}]({{ page.registration_url }})
 
-## Discussion Notes
+## Presentation Slides
 
-*Notes from the discussion will be added after the session.*
+[Download Presentation (PDF)](/assets/presentations/KAUST_talk_2025.pdf)
