@@ -172,9 +172,6 @@ collections:
   ms_quantum:
     output: true
     permalink: /ms-quantum/:name/
-  umq_events:
-    output: true
-    permalink: /umq-events/:name/
   pages:
     output: true
     permalink: /:path/

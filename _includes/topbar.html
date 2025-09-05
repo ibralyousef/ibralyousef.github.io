@@ -51,11 +51,7 @@
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
         {{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}
       {% else %}
-        {% if page.layout == 'umq-event' %}
-          UMQ-Event
-        {% else %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize -}}
-        {% endif %}
+        {{- site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize -}}
       {% endif %}
     </div>
 

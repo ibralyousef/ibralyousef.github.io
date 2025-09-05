@@ -1,14 +1,18 @@
 ---
-layout: umq-reading-group
+layout: page
 icon: fas fa-book-open
 order: 3
 title: UMQ Reading Group
 ---
 
-## About
+<meta http-equiv="refresh" content="0; url=https://umq.iphysics.sa">
 
-**UMQ** bridges academia and industry, supporting technical professionals through deep technical activities in various fields.
+<script type="text/javascript">
+    window.location.href = "https://umq.iphysics.sa"
+</script>
 
-**QC Reading Group** focuses on latest quantum computing developments. Papers are selected monthly with volunteer-led discussions.
+## Redirecting to UMQ Reading Group...
 
-**Who can join?** Anyone with technical interest in quantum computing: students, researchers, or curious minds are all welcome.
+The UMQ Reading Group has moved to [umq.iphysics.sa](https://umq.iphysics.sa).
+
+If you are not redirected automatically, please click the link above.
